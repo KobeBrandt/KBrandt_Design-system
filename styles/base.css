@@ -2,13 +2,21 @@
 :root{
     /* Colors */
     --primary: #5d5bda;
-    --light-mode-text: #ffffff;
+
+    /* Light mode */
+    --light-mode-text: #000000;
     --light-mode-background: #f5f5f5;
-    
+
+    /* dark mode */
+
+    /* just colors */
+    --white: #ffffff;
+    --gray: #494949;
+
 
 
     /* Typografie */
-    font-family: roboto,sans-serif;
+    font-family: "DM Sans", sans-serif;
     line-height: 1.6;
     scroll-behavior: smooth;
     h2{

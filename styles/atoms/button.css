@@ -1,4 +1,37 @@
 .button{
     background-color: var(--primary);
     text-decoration: none;
+    color: var(--white);
+    padding: 0.5rem;
+    font-weight: bold;
+    border-radius: 0.2rem;
+    margin: 0.5rem;
+    @media (min-width: 46.875em) {
+        transition: box-shadow 0.3s ease-in-out;
+        &:hover{
+            box-shadow: 0rem 0rem 0.2rem var(--light-mode-text);
+        }
+    }
+}
+.button-small{
+    font-size: 75%;
+}
+.button-large{
+    font-size: 125%;
+}
+.button-extra-large{
+    font-size: 150%;
+}
+.button-disabled{
+    background-color: var(--gray);
+    opacity: 90%;
+        &:hover{
+            box-shadow: none;
+            cursor: not-allowed;
+        }
+}
+.button-secondary{
+    border: 0.1rem solid var(--primary);
+    background-color: inherit;
+    color: var(--primary);
 }

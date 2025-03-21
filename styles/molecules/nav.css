@@ -1,0 +1,21 @@
+.nav{
+    display: flex;
+    background-color: var(--primary);
+    img{
+        
+    }
+    ul{
+        color: var(--white);
+        list-style: none;
+        width: 100%;
+        li{
+            font-size: 110%;
+            border-bottom: 0.1rem solid var(--white);
+            a{
+                display:block;
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+}
