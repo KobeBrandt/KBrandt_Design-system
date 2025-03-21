@@ -1,6 +1,7 @@
 /* Links all to other css files + sets the order */
-@import url("./base.css");
-@import url("./generic.css");
-@import url("./layout.css");
-@import url("./components.css");
-@import url("./helpers.css");
+@import "./base.css";
+@import "./generic.css";
+@import "./layout.css";
+@import "./atoms/atoms.css";
+@import "./molecules/molecules.css";
+@import "./organisms/organisms.css";

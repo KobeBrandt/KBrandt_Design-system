@@ -1,3 +1,4 @@
 .button{
-    
+    background-color: var(--primary);
+    text-decoration: none;
 }
