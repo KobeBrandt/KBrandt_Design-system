@@ -21,7 +21,6 @@
             width: 5rem;
         }
         ul{
-            
             justify-content: right;
             display: flex;
             gap: 1rem;
@@ -30,5 +29,14 @@
                 border-bottom: none;
             }
         }
+    }
+}
+.nav-name{
+    flex-direction: column;
+    p{
+        font-weight: bold;
+    }
+    li{
+        text-align: center;
     }
 }
