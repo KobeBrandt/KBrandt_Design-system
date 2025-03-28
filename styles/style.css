@@ -7,9 +7,8 @@
 
 /* base */
 /* @import "./base"; */
-@import "./base.css";
-@import "./layout.css";
-@import "./atoms/atoms.css";
+@import "./base/colors.css";
+@import "./base/typografie.css";
 
 /* utilities */
 /* @import "./utilities"; */
@@ -22,7 +21,7 @@
 @import "./components/background.css";
 @import "./components/hover.css";
 @import "./components/code.css";
-@import "./components/nac.css";
+@import "./components/nav.css";
 
 /* layout */
 /* @import "./layout"; */
