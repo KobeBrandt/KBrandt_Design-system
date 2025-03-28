@@ -1,4 +1,3 @@
-/* colors + typography */
 :root{
     /* Colors */
     --primary: #5d5bda;
@@ -14,12 +13,4 @@
     --gray: #494949;
     --light-gray: #d6d6d6;
 
-    /* Typografie */
-    font-family: "DM Sans", sans-serif;
-    line-height: 1.6;
-    scroll-behavior: smooth;
-    h2{
-        margin-top: 2rem;
-        margin-bottom: 0.5rem;
-    }
 }

@@ -12,6 +12,7 @@
             box-shadow: 0rem 0rem 0.2rem var(--light-mode-text);
         }
     }
+    margin-left: 0;
 }
 .button-small{
     font-size: 75%;

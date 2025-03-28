@@ -9,10 +9,17 @@
             font-size: 110%;
             border-bottom: 0.1rem solid var(--white);
             a{
-
                 display:block;
                 text-decoration: none;
                 color: inherit;
+                @media (min-width: 46.875em) {
+                    transition: text-shadow 0.3s ease-in-out;
+                    transition: text-decoration 0.3s ease-in-out;
+                    &:hover{
+                        text-shadow: 0rem 0rem 0.2rem var(--light-mode-text);
+                        text-decoration: underline;
+                    }
+                }
             }
         }
     }

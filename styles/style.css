@@ -1,7 +1,30 @@
-/* Links all to other css files + sets the order */
+/* Links all to other css files */
+
+/* generic */
+/* @import "./generic"; */
+@import "./generic/common.css";
+@import "./generic/reset.css";
+
+/* base */
+/* @import "./base"; */
 @import "./base.css";
-@import "./generic.css";
 @import "./layout.css";
 @import "./atoms/atoms.css";
-@import "./molecules/molecules.css";
-@import "./organisms/organisms.css";
+
+/* utilities */
+/* @import "./utilities"; */
+@import "./utilities/animations.css";
+
+
+/* components */
+/* @import "./components"; */
+@import "./components/button.css";
+@import "./components/background.css";
+@import "./components/hover.css";
+@import "./components/code.css";
+@import "./components/nac.css";
+
+/* layout */
+/* @import "./layout"; */
+@import "./layout/container.css";
+
