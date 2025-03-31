@@ -27,6 +27,9 @@
 @import "./components/card.css";
 @import "./components/stepper.css";
 @import "./components/shoppingCart.css";
+@import "./components/notification.css";
+@import "./components/banner.css";
+@import "./components/hero";
 
 /* layout */
 /* @import "./layout"; */
