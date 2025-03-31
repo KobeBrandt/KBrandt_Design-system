@@ -15,10 +15,8 @@
                 color: inherit;
                 @media (min-width: 46.875em) {
                     transition: text-shadow 0.3s ease-in-out;
-                    transition: text-decoration 0.3s ease-in-out;
                     &:hover{
                         text-shadow: 0rem 0rem 0.2rem var(--light-mode-text);
-                        text-decoration: underline;
                     }
                 }
             }
@@ -73,6 +71,7 @@
 .nav-breadcrumb{
     list-style: none;
     padding: 0;
+    margin-top: 0;
     padding-bottom: 1rem;
     display: flex;
     background-color: var(--primary);

@@ -1,11 +1,13 @@
 .button{
     background-color: var(--primary);
     text-decoration: none;
+    text-align: center;
     color: var(--white);
     padding: 0.5rem;
     font-weight: bold;
     border-radius: 0.2rem;
     margin: 1rem;
+    border: 0;
     @media (min-width: 46.875em) {
         transition: box-shadow 0.3s ease-in-out;
         &:hover{
