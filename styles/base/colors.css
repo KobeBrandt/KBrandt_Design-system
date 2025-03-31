@@ -1,7 +1,8 @@
 :root{
     /* Colors */
     --primary: #5d5bda;
-    --error-color: #b50000;
+    --error: #b50000;
+    --disabled: #494949;
 
 
     /* Light mode */
@@ -21,7 +22,6 @@
 
     /* just colors */
     --white: #ffffff;
-    --gray: #494949;
     --light-gray: #d6d6d6;
 
 }

@@ -26,7 +26,7 @@
     font-size: 150%;
 }
 .button-disabled{
-    background-color: var(--gray);
+    background-color: var(--disabled);
     opacity: 90%;
         &:hover{
             box-shadow: none;

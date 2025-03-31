@@ -1,5 +1,3 @@
-/* labels, tekstvelden, textarea, wachtwoordveld, select, checkbox, radiobutton. 
-Voorzie hierbij varianten zoals bijvoorbeeld disabled en invalid.  */
 .form{
     display: flex;
     flex-direction: column;
@@ -26,12 +24,23 @@ Voorzie hierbij varianten zoals bijvoorbeeld disabled en invalid.  */
         font-weight: 600;        
     }
     input{
-        border: 1px solid #ccc;
-        font-size: 1em;
+        font-size: 1rem;
         padding: 0.5em;
         width: 90%; 
         width: calc(100% - 1.5em);
         border-radius: 0.2rem;
+    }
+    textarea{
+        font-size: 1rem;
+        padding: 0.5em;
+        width: 90%; 
+        width: calc(100% - 1.5em);
+        border-radius: 0.2rem;
+    }
+    select{
+        display: block;
+        background-color: inherit;
+        font-size: 1rem;
     }
     fieldset {
         border: 0;
@@ -68,8 +77,20 @@ Voorzie hierbij varianten zoals bijvoorbeeld disabled en invalid.  */
         display: block;
         font-weight: normal;
         margin-top: 0.25em;
-        color: var(--error-color);
+        color: var(--error);
         margin: 0;
         padding: 0;
+    }
+    .input-error{
+        border-color: var(--error);
+    }
+    .disabled{
+        color: var(--disabled);
+        border-color: var(--disabled);
+        &:hover{
+            input{
+                cursor: not-allowed;
+            }
+        }
     }
 }

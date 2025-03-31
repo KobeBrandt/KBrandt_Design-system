@@ -37,34 +37,85 @@
             </ul>
         </nav>
     </header>
-    <main class="container">
+    <main class="container container-detail">
         <h1>Form</h1>
         <p>Get user input</p>
         <section>
-            <form action="">
-                <div>
-                    <label for="#">
-                        <span></span>
+            <form action="" class="form">
+                <div class="form-item">
+                    <label for="text">
+                        <span>text</span>
                         <span class="error">Error</span>
                     </label>
+                    <input type="text" name="text" id="text" autocomplete="" required>
                 </div>
-                <label for="">text</label>
-                <input type="text" id="text">
-                <label for="textarea">text area</label>
-                <textarea name="" id="textarea"></textarea>
-                <label for="pass">password</label>
-                <input type="password" id="pass">
-                <label for="sel">select</label>
-                <select name="" id="sel">test</select>
-                <label for="ch1">check1</label>
-                <input type="checkbox" name="" id="ch1">
-                <label for="ch2">check2</label>
-                <input type="checkbox" name="" id="ch2">
-                <label for="r1">radio1</label>
-                <input type="radio" name="" id="r1">
-                <label for="r2">radio2</label>
-                <input type="radio" name="" id="r2">
-                <button>Submit</button>
+                <div class="form-item">
+                    <label for="textarea">
+                        <span>text area</span>
+                    </label>
+                    <textarea name="textarea" id="textarea"></textarea>
+                </div>
+                <div class="form-item disabled">
+                    <label for="pass">
+                        <span>Password</span>
+                    </label>
+                    <input type="password" name="pass" id="pass" autocomplete="current-password" disabled>
+                </div>
+                <div class="form-item">
+                    <label for="select">
+                        <span>Select</span>
+                        <select name="select" id="select">
+                            <option value="1">This is an option</option>
+                            <option value="2">This is also an option</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <fieldset>
+                        <legend>
+                            <span class="label">checkbox</span>
+                            <!-- <span class="error" id="error_checkbox">error</span> -->
+                        </legend>
+                         <div class="checkbox">
+                            <input type="checkbox" id="check1" name="check[]" value="1" aria-describedby="error_checkbox">
+                            <label for="check1">Check1</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="check2" name="check[]" value="2" aria-describedby="error_checkbox">
+                            <label for="check2">Check1</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="check3" name="check[]" value="3" aria-describedby="error_checkbox">
+                            <label for="check1">Check3</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-item">
+                    <fieldset>
+                        <legend>
+                            <span class="label">radio</span>
+                            <span class="error" id="error_radio">error</span>
+                        </legend>
+                         <div class="radiobutton">
+                            <input type="radio" id="radio1" name="radio" value="radio1" aria-describedby="error_radio">
+                            <label for="radio1">Radio1</label>
+                        </div>
+                        <div class="radiobutton">
+                            <input type="radio" id="radio2" name="radio" value="radio2" aria-describedby="error_radio">
+                            <label for="radio2">Radio2</label>
+                        </div>
+                        <div class="radiobutton">
+                            <input type="radio" id="radio3" name="radio" value="radio3" aria-describedby="error_radio">
+                            <label for="radio3">Radio3</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <!-- <div class="form-item">
+                    <label for="#">
+                        <span></span>
+                    </label>
+                </div> -->
+                <button class="button">Submit</button>
             </form>
             
         </section>
