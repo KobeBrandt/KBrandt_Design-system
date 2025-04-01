@@ -30,6 +30,8 @@
 @import "./components/notification.css";
 @import "./components/banner.css";
 @import "./components/hero.css";
+@import "./components/bold.css";
+@import "./components/tableOfContents.css";
 
 /* layout */
 /* @import "./layout"; */

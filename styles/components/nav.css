@@ -2,13 +2,13 @@
     display: flex;
     background-color: var(--primary);
     ul{
-        color: var(--white);
+        color: var(--primary-text);
         list-style: none;
         width: 100%;
         font-weight: bold;
         li{
             font-size: 110%;
-            border-bottom: 0.1rem solid var(--white);
+            border-bottom: 0.1rem solid var(--primary-text);
             a{
                 display:block;
                 text-decoration: none;

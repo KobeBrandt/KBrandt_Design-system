@@ -39,11 +39,26 @@
             </ol>
         </nav>
     </header>
-    <main class="container">
-        <h1>Nav</h1>
-        <p>Navigation can be used to navigate between pages</p>
+    <main class="container container-detail">
+        <h1>Nav Components</h1>
+        <p>
+            This documentation provides an overview of the navigation components used in the application. Each component is designed to enhance user experience and provide easy access to different sections of the application.
+        </p>
         <section>
+            <h2>Table of Contents</h2>
+            <ol class="tableOfContents">
+                <li><a href="#NavWithLogo">Nav with logo</a></li>
+                <li><a href="#NavWithName">Nav with name</a></li>
+                <li><a href="#NavBreadcrumb">Nav breadcrumb</a></li>
+            </ol>
+        </section>
+        <section id="NavWithLogo">
             <h2>Nav with logo</h2>
+            <p>
+                The "Nav with Logo" component is used to display a navigation bar that includes a logo. 
+                This component is ideal for branding and providing quick access to different sections of the application.
+            </p>
+            <h3>Example</h3>
             <nav class="container">
                 <div class="nav">
                     <a href=""><img src="../../../images/kb_logo.png" alt="KB"></a>
@@ -60,9 +75,19 @@
                     </ul> 
                 </div>
             </nav>
+            <h3>Usage</h3>
+            <ul>
+                <li><span class="bold">Logo</span>: Include a logo image within an anchor tag to make it clickable.</li>
+                <li><span class="bold">Navigation Items</span>: Use an unordered list to display navigation items. Each item should be wrapped in an anchor tag for linking.</li>
+                <li><span class="bold">Styling</span>: Apply the .nav class to style the navigation bar. Use Flexbox for alignment.</li>
+            </ul>
         </section>
-        <section>
+        <section id="NavWithName">
             <h2>Nav with name</h2>
+            <p>
+                The "Nav with Name" component is used to display a navigation bar that includes a name or title. This component is useful for personal branding or displaying the name of a section.
+            </p>
+            <h3>Example</h3>
             <nav class="container">
                 <div class="nav nav-name">
                     <p>KBrandt</p>
@@ -79,9 +104,16 @@
                     </ul> 
                 </div>
             </nav>
+            <h3>Usage</h3>
+            <ul>
+                <li><span class="bold">Name/Title</span>: Display the name or title using a paragraph tag.</li>
+                <li><span class="bold">Navigation Items</span>: Use an unordered list to display navigation items. Each item should be wrapped in an anchor tag for linking.</li>
+                <li><span class="bold">Styling</span>: Apply the .nav and .nav-name classes to style the navigation bar. Use Flexbox for alignment.</li>
+            </ul>
         </section>
-        <section>
+        <section id="NavBreadcrumb">
             <h2>Nav breadcrumb</h2>
+            <p>The "Nav Breadcrumb" component is used to display a breadcrumb navigation. Breadcrumbs help users understand their location within the application's hierarchy.</p>
             <nav class="container">
                 <ol class="nav-breadcrumb">
                     <li>
@@ -95,6 +127,11 @@
                     </li>
                 </ol> 
             </nav>
+            <h3>Usage</h3>
+            <ul>
+                <li><span class="bold">Breadcrumb Items</span>: Use an ordered list to display breadcrumb items. Each item should be wrapped in an anchor tag for linking.</li>
+                <li><span class="bold">Navigation Items</span>: Apply the .nav-breadcrumb class to style the breadcrumb navigation. Use Flexbox for alignment and add separators between items.</li>
+            </ul>
         </section>
     </main>
     <footer>
