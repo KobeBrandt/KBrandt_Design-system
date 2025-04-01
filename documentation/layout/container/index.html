@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/style.css">
+    <title>Container | KBrandt design system</title>
+</head>
+<body>
+    <header class="background-primary">
+        <nav class="container">
+            <div class="nav">
+                <a href=""><img src="../../../images/kb_logo.png" alt="KB"></a>
+                <ul>
+                    <li>
+                        <a href="../../generic">Generic</a>
+                    </li>
+                    <li>
+                        <a href="../../base/">Base</a>
+                    </li>
+                    <li>
+                        <a href="../../utilities/">Utilities</a>
+                    </li>
+                    <li>
+                        <a href="../../components/">Components</a>
+                    </li>
+                    <li>
+                        <a href="../../layout/">Layout</a>
+                    </li>
+                </ul> 
+            </div>
+        </nav>
+        <nav class="container">
+            <ol class="nav-breadcrumb">
+                <li>
+                    <a href="../../layout/">Layout</a>
+                </li>
+                <li>
+                    <a href="./">Container</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
+    <main class="container container-detail">
+        <h1>Container Layout</h1>
+        <p>
+            This documentation provides an overview of the container layout styles used in the design system. These styles ensure consistent spacing and alignment across the application.
+        </p>
+        <section>
+            <h2>Table of Contents</h2>
+            <ol class="tableOfContents">
+                <li><a href="#Container">Container</a></li>
+                <li><a href="#ContainerDetail">Container Detail</a></li>
+            </ol>
+        </section>
+        <section id="Container">
+            <h2>Container</h2>
+            <p>
+                The <code>.container</code> class is a general-purpose container that centers content and provides responsive padding.
+            </p>
+            <h3>Properties</h3>
+            <ul>
+                <li><span class="bold">max-width</span>: Limits the container's width to 80rem for better readability on larger screens.</li>
+                <li><span class="bold">margin-inline</span>: Centers the container horizontally within its parent.</li>
+                <li><span class="bold">padding-inline</span>: Adds horizontal padding of 1rem for spacing within the container.</li>
+            </ul>
+            <h3>Example</h3>
+            <div class="container example-container">
+                <p>This is an example of a container.</p>
+            </div>
+        </section>
+        <section id="ContainerDetail">
+            <h2>Container Detail</h2>
+            <p>
+                The <code>.container-detail</code> class is a narrower container designed for detailed content, such as forms or specific sections.
+            </p>
+            <h3>Properties</h3>
+            <ul>
+                <li><span class="bold">max-width</span>: Limits the container's width to 40rem for a more focused layout.</li>
+            </ul>
+            <h3>Example</h3>
+            <div class="container container-detail example-container">
+                <p>This is an example of a container-detail.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Usage</h2>
+            <ul>
+                <li>Use the <code>.container</code> class for general layout purposes, such as wrapping main content.</li>
+                <li>Use the <code>.container-detail</code> class for smaller, detailed sections requiring a narrower layout.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

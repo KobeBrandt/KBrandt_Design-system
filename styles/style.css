@@ -32,6 +32,7 @@
 @import "./components/hero.css";
 @import "./components/bold.css";
 @import "./components/tableOfContents.css";
+@import "./components/codeblock.css";
 
 /* layout */
 /* @import "./layout"; */
