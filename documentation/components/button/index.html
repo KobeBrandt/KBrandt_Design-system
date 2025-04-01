@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../styles/style.css">
-    <title>Button | KBrandt design system</title>
+    <title>Button | KBrandt Design System</title>
 </head>
 <body>
     <header class="background-primary">
@@ -13,47 +13,132 @@
             <div class="nav">
                 <a href=""><img src="../../../images/kb_logo.png" alt="KB"></a>
                 <ul>
-                    <li>
-                        <a href="../../generic">Generic</a>
-                    </li>
-                    <li>
-                        <a href="../../base/">Base</a>
-                    </li>
-                    <li>
-                        <a href="../../utilities/">Utilities</a>
-                    </li>
-                    <li>
-                        <a href="../../components/">Components</a>
-                    </li>
-                    <li>
-                        <a href="../../layout/">Layout</a>
-                    </li>
-                </ul> 
+                    <li><a href="../../generic">Generic</a></li>
+                    <li><a href="../../base/">Base</a></li>
+                    <li><a href="../../utilities/">Utilities</a></li>
+                    <li><a href="../../components/">Components</a></li>
+                    <li><a href="../../layout/">Layout</a></li>
+                </ul>
             </div>
         </nav>
         <nav class="container">
             <ol class="nav-breadcrumb">
-                <li>
-                    <a href="../../components/">Components</a>
-                </li>
+                <li><a href="../../components/">Components</a></li>
                 <li>Button</li>
             </ol>
         </nav>
     </header>
     <main class="container container-detail">
-        <h1>Button</h1>
-        <p>Buttons offer a simple, interactive way to trigger actions, enhancing user engagement and streamlining navigation.</p>
+        <h1>Button Component</h1>
+        <p>
+            The button component provides a simple, interactive way to trigger actions, enhancing user engagement and streamlining navigation.
+        </p>
         <section>
-            <h2>Example</h2>
-            <a href="#" class="button">Default Button</a>
+            <h2>Table of Contents</h2>
+            <ol class="tableOfContents">
+                <li><a href="#BaseButton">Base Button</a></li>
+                <li><a href="#ButtonSizes">Button Sizes</a></li>
+                <li><a href="#ButtonStates">Button States</a></li>
+                <li><a href="#ButtonVariants">Button Variants</a></li>
+            </ol>
+        </section>
+        <section id="BaseButton">
+            <h2>Base Button</h2>
+            <p>
+                The base button is styled with a primary background color and centered text. It is designed to be easily customizable for different use cases.
+            </p>
+            <h3>Example</h3>
+            <a href="#" class="button">Click Me</a>
+            <h3>Usage</h3>
+            <ul>
+                <li><span class="bold">Background Color</span>: Uses the <code>--primary</code> CSS variable.</li>
+                <li><span class="bold">Text Decoration</span>: None.</li>
+                <li><span class="bold">Text Alignment</span>: Centered.</li>
+                <li><span class="bold">Color</span>: White text using <code>--white</code>.</li>
+                <li><span class="bold">Padding</span>: 0.5rem for comfortable click area.</li>
+                <li><span class="bold">Font Weight</span>: Bold text.</li>
+                <li><span class="bold">Border Radius</span>: Slightly rounded corners.</li>
+                <li><span class="bold">Margin</span>: 1rem for spacing, except for left margin which is 0.</li>
+                <li><span class="bold">Border</span>: None.</li>
+                <li><span class="bold">Media Query (min-width: 46.875em)</span>: Smooth transition for box shadow on hover.</li>
+            </ul>
+        </section>
+        <section id="ButtonSizes">
+            <h2>Button Sizes</h2>
+            <p>
+                The button component includes different size variations to accommodate various design requirements.
+            </p>
+            <h3>Examples</h3>
+            <a href="#" class="button button-small">Small Button</a>
+            <a href="#" class="button button-large">Large Button</a>
+            <a href="#" class="button button-extra-large">Extra Large Button</a>
+            <h3>Usage</h3>
+            <ul>
+                <li><span class="bold">Small Button (<code>.button-small</code>)</span>: Font size is 75% of the base button.</li>
+                <li><span class="bold">Large Button (<code>.button-large</code>)</span>: Font size is 125% of the base button.</li>
+                <li><span class="bold">Extra Large Button (<code>.button-extra-large</code>)</span>: Font size is 150% of the base button.</li>
+            </ul>
+        </section>
+        <section id="ButtonStates">
+            <h2>Button States</h2>
+            <p>
+                The button component includes a disabled state to indicate when a button is not interactive.
+            </p>
+            <h3>Example</h3>
+            <a href="#" class="button button-disabled" aria-disabled="true">Disabled Button</a>
+            <h3>Usage</h3>
+            <ul>
+                <li><span class="bold">Disabled Button (<code>.button-disabled</code>)</span>:
+                    <ul>
+                        <li>Background Color: Uses the <code>--disabled</code> CSS variable.</li>
+                        <li>Opacity: 90% opacity to indicate the disabled state.</li>
+                        <li>Hover Effect: No box shadow and cursor changes to <code>not-allowed</code>.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="ButtonVariants">
+            <h2>Button Variants</h2>
+            <p>
+                The button component includes a secondary variant for alternative styling.
+            </p>
+            <h3>Example</h3>
+            <a href="#" class="button button-secondary">Secondary Button</a>
+            <h3>Usage</h3>
+            <ul>
+                <li><span class="bold">Secondary Button (<code>.button-secondary</code>)</span>:
+                    <ul>
+                        <li>Border: Thin solid border using <code>--primary</code>.</li>
+                        <li>Background Color: Inherits from the parent element.</li>
+                        <li>Color: Uses the <code>--primary</code> CSS variable for text color.</li>
+                    </ul>
+                </li>
+            </ul>
         </section>
         <section>
             <h2>Code Example</h2>
+            <h3>Base Button</h3>
             <pre class="codeblock">
-<code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+<code>&lt;a href="#" class="button"&gt;Click Me&lt;/a&gt;</code>
+            </pre>
+            <h3>Button Sizes</h3>
+            <pre class="codeblock">
+<code>&lt;a href="#" class="button button-small"&gt;Small Button&lt;/a&gt;
+&lt;a href="#" class="button button-large"&gt;Large Button&lt;/a&gt;
+&lt;a href="#" class="button button-extra-large"&gt;Extra Large Button&lt;/a&gt;</code>
+            </pre>
+            <h3>Disabled Button</h3>
+            <pre class="codeblock">
+<code>&lt;a href="#" class="button button-disabled" aria-disabled="true"&gt;Disabled Button&lt;/a&gt;</code>
+            </pre>
+            <h3>Secondary Button</h3>
+            <pre class="codeblock">
+<code>&lt;a href="#" class="button button-secondary"&gt;Secondary Button&lt;/a&gt;</code>
             </pre>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
 </body>
 </html>

@@ -84,13 +84,12 @@
         a{
             color: inherit;
         }
+
         &::after{
             content: ">";
             margin-inline: 0.5rem;
             text-decoration: none;
         }
-        &:first-child::before {
-            content: none; 
-          }
+
     }
 }
