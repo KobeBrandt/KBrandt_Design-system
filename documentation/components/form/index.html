@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../styles/style.css">
-    <title>Form | KBrandt design system</title>
+    <title>Form | KBrandt Design System</title>
 </head>
 <body>
     <header class="background-primary">
@@ -13,32 +13,38 @@
             <div class="nav">
                 <a href=""><img src="../../../images/kb_logo.png" alt="KB"></a>
                 <ul>
-                    <li>
-                        <a href="../../generic">Generic</a>
-                    </li>
-                    <li>
-                        <a href="../../base/">Base</a>
-                    </li>
-                    <li>
-                        <a href="../../utilities/">Utilities</a>
-                    </li>
-                    <li>
-                        <a href="../../components/">Components</a>
-                    </li>
-                    <li>
-                        <a href="../../layout/">Layout</a>
-                    </li>
-                </ul> 
+                    <li><a href="../../generic">Generic</a></li>
+                    <li><a href="../../base/">Base</a></li>
+                    <li><a href="../../utilities/">Utilities</a></li>
+                    <li><a href="../../components/">Components</a></li>
+                    <li><a href="../../layout/">Layout</a></li>
+                </ul>
             </div>
         </nav>
         <nav class="container">
             <ol class="nav-breadcrumb">
-                <li>
-                    <a href="../../components/">Components</a>
-                </li>
+                <li><a href="../../components/">Components</a></li>
+                <li>Form</li>
             </ol>
         </nav>
     </header>
+
+    <!-- Documentation Section -->
+    <section class="documentation">
+        <div class="container">
+            <h1>Form Component Documentation</h1>
+            <p>
+                This page provides an overview of the <strong>Form</strong> component in the KBrandt Design System. 
+                Forms are essential for collecting user input and are designed to be accessible, customizable, and easy to use.
+            </p>
+            <ul>
+                <li><strong>Purpose:</strong> Collect user input in a structured and accessible way.</li>
+                <li><strong>Features:</strong> Includes text inputs, text areas, dropdowns, checkboxes, and radio buttons.</li>
+                <li><strong>Accessibility:</strong> Built with semantic HTML and ARIA attributes for better usability.</li>
+            </ul>
+        </div>
+    </section>
+
     <main class="container container-detail">
         <h1>Form</h1>
         <p>Get user input</p>
@@ -76,19 +82,18 @@
                     <fieldset>
                         <legend>
                             <span class="label">checkbox</span>
-                            <!-- <span class="error" id="error_checkbox">error</span> -->
                         </legend>
-                         <div class="checkbox">
+                        <div class="checkbox">
                             <input type="checkbox" id="check1" name="check[]" value="1" aria-describedby="error_checkbox">
                             <label for="check1">Check1</label>
                         </div>
                         <div class="checkbox">
                             <input type="checkbox" id="check2" name="check[]" value="2" aria-describedby="error_checkbox">
-                            <label for="check2">Check1</label>
+                            <label for="check2">Check2</label>
                         </div>
                         <div class="checkbox">
                             <input type="checkbox" id="check3" name="check[]" value="3" aria-describedby="error_checkbox">
-                            <label for="check1">Check3</label>
+                            <label for="check3">Check3</label>
                         </div>
                     </fieldset>
                 </div>
@@ -98,7 +103,7 @@
                             <span class="label">radio</span>
                             <span class="error" id="error_radio">error</span>
                         </legend>
-                         <div class="radiobutton">
+                        <div class="radiobutton">
                             <input type="radio" id="radio1" name="radio" value="radio1" aria-describedby="error_radio">
                             <label for="radio1">Radio1</label>
                         </div>
@@ -112,18 +117,23 @@
                         </div>
                     </fieldset>
                 </div>
-                <!-- <div class="form-item">
-                    <label for="#">
-                        <span></span>
-                    </label>
-                </div> -->
                 <button class="button">Submit</button>
             </form>
-            
+        </section>
+        <section>
+            <h2>Code Example</h2>
+            <pre class="codeblock">
+<code>&lt;form class="form"&gt;
+    &lt;div class="form-item"&gt;
+        &lt;label for="input"&gt;Label&lt;/label&gt;
+        &lt;input type="text" id="input" /&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code>
+            </pre>
         </section>
     </main>
     <footer>
-
+        <p>&copy; 2025 KBrandt Design System. All rights reserved.</p>
     </footer>
 </body>
 </html>
