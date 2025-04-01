@@ -1,6 +1,7 @@
 :root{
     /* Colors */
     --primary: #5d5bda;
+    --primary-text: #ffffff;
     --error: #b50000;
     --alert: #c1da0b;
     --disabled: #494949;
