@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/style.css">
+    <title>Background Primary | KBrandt Design System</title>
+</head>
+<body>
+    <header class="background-primary">
+        <nav class="container">
+            <div class="nav">
+                <a href=""><img src="../../../images/kb_logo.png" alt="KB"></a>
+                <ul>
+                    <li><a href="../../generic">Generic</a></li>
+                    <li><a href="../../base/">Base</a></li>
+                    <li><a href="../../utilities/">Utilities</a></li>
+                    <li><a href="../../components/">Components</a></li>
+                    <li><a href="../../layout/">Layout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="container">
+            <ol class="nav-breadcrumb">
+                <li><a href="../../components/">Components</a></li>
+                <li>Background Primary</li>
+            </ol>
+        </nav>
+    </header>
+    <main class="container container-detail">
+        <h1>Background Primary Component</h1>
+        <p>
+            The background-primary component is used to apply a primary background color and text color to elements, ensuring a consistent look and feel across the application.
+        </p>
+        <section>
+            <h2>Table of Contents</h2>
+            <ol class="tableOfContents">
+                <li><a href="#BaseUsage">Base Usage</a></li>
+                <li><a href="#Customization">Customization</a></li>
+            </ol>
+        </section>
+        <section id="BaseUsage">
+            <h2>Base Usage</h2>
+            <p>
+                The base usage of the background-primary component involves applying the primary background color and white text color to an element. This is typically used for headers, navigation bars, and other prominent UI elements.
+            </p>
+            <h3>Example</h3>
+            <div class="background-primary" style="padding: 20px;">
+                This element has a primary background color and white text.
+            </div>
+            <h3>Usage</h3>
+            <ul>
+                <li><span class="bold">Background Color</span>: Uses the <code>--primary</code> CSS variable to set the background color.</li>
+                <li><span class="bold">Text Color</span>: Uses the <code>--primary-text</code> CSS variable to set the text color.</li>
+                <li><span class="bold">Application</span>: Apply the <code>.background-primary</code> class to any element to set its background and text colors.</li>
+            </ul>
+        </section>
+        <section id="Customization">
+            <h2>Customization</h2>
+            <p>
+                The background-primary component can be customized by modifying the <code>--primary</code> and <code>--white</code> CSS variables. This allows for flexibility in design while maintaining consistency across the application.
+            </p>
+            <h3>Example</h3>
+            <div class="background-primary" style="padding: 20px;">
+                Customized primary background color and white text.
+            </div>
+            <h3>Usage</h3>
+            <ul>
+                <li><span class="bold">CSS Variables</span>: Change the values of <code>--primary</code> and <code>--primary-text</code> in your CSS to customize the background and text colors.</li>
+                <li><span class="bold">Additional Styling</span>: Combine with other utility classes for padding, margins, and text styles to achieve the desired design.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Code Example</h2>
+            <h3>Base Usage</h3>
+            <pre class="codeblock">
+<code>&lt;div class="background-primary" style="padding: 20px;"&gt;
+    This element has a primary background color and white text.
+&lt;/div&gt;</code>
+            </pre>
+            <h3>Customized Usage</h3>
+            <pre class="codeblock">
+<code>&lt;div class="background-primary" style="padding: 20px;"&gt;
+    Customized primary background color and white text.
+&lt;/div&gt;</code>
+            </pre>
+        </section>
+    </main>
+    <footer class="background-primary">
+        <div class="footer">
+            <p>KBrandt design system - made by Kobe Brandt</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../styles/style.css">
-    <title>Component Name | KBrandt Design System</title>
+    <title>Button | KBrandt Design System</title>
 </head>
 <body>
     <header class="background-primary">
@@ -24,70 +24,116 @@
         <nav class="container">
             <ol class="nav-breadcrumb">
                 <li><a href="../../components/">Components</a></li>
-                <li>Component Name</li>
+                <li>Button</li>
             </ol>
         </nav>
     </header>
     <main class="container container-detail">
-        <h1>Component Name Documentation</h1>
+        <h1>Button Component</h1>
         <p>
-            This documentation provides an overview of the [Component Name] used in the application. Each component is designed to enhance user experience and provide a consistent look and feel.
+            The button component provides a simple, interactive way to trigger actions, enhancing user engagement and streamlining navigation.
         </p>
         <section>
             <h2>Table of Contents</h2>
             <ol class="tableOfContents">
-                <li><a href="#Section1">Section 1</a></li>
-                <li><a href="#Section2">Section 2</a></li>
-                <li><a href="#Section3">Section 3</a></li>
+                <li><a href="#BaseButton">Base Button</a></li>
+                <li><a href="#ButtonSizes">Button Sizes</a></li>
+                <li><a href="#ButtonStates">Button States</a></li>
+                <li><a href="#ButtonVariants">Button Variants</a></li>
             </ol>
         </section>
-        <section id="Section1">
-            <h2>Section 1</h2>
+        <section id="BaseButton">
+            <h2>Base Button</h2>
             <p>
-                Description of the first section. Explain the purpose and functionality of this part of the component.
+                The base button is styled with a primary background color and centered text. It is designed to be easily customizable for different use cases.
             </p>
             <h3>Example</h3>
-            <!-- Add example code or visual representation here -->
+            <a href="#" class="button">Click Me</a>
             <h3>Usage</h3>
             <ul>
-                <li><span class="bold">Feature 1</span>: Description of the first feature.</li>
-                <li><span class="bold">Feature 2</span>: Description of the second feature.</li>
-                <li><span class="bold">Styling</span>: Description of how to style this section.</li>
+                <li><span class="bold">Background Color</span>: Uses the <code>--primary</code> CSS variable.</li>
+                <li><span class="bold">Text Decoration</span>: None.</li>
+                <li><span class="bold">Text Alignment</span>: Centered.</li>
+                <li><span class="bold">Color</span>: White text using <code>--white</code>.</li>
+                <li><span class="bold">Padding</span>: 0.5rem for comfortable click area.</li>
+                <li><span class="bold">Font Weight</span>: Bold text.</li>
+                <li><span class="bold">Border Radius</span>: Slightly rounded corners.</li>
+                <li><span class="bold">Margin</span>: 1rem for spacing, except for left margin which is 0.</li>
+                <li><span class="bold">Border</span>: None.</li>
+                <li><span class="bold">Media Query (min-width: 46.875em)</span>: Smooth transition for box shadow on hover.</li>
             </ul>
         </section>
-        <section id="Section2">
-            <h2>Section 2</h2>
+        <section id="ButtonSizes">
+            <h2>Button Sizes</h2>
             <p>
-                Description of the second section. Explain the purpose and functionality of this part of the component.
+                The button component includes different size variations to accommodate various design requirements.
             </p>
-            <h3>Example</h3>
-            <!-- Add example code or visual representation here -->
+            <h3>Examples</h3>
+            <a href="#" class="button button-small">Small Button</a>
+            <a href="#" class="button button-large">Large Button</a>
+            <a href="#" class="button button-extra-large">Extra Large Button</a>
             <h3>Usage</h3>
             <ul>
-                <li><span class="bold">Feature 1</span>: Description of the first feature.</li>
-                <li><span class="bold">Feature 2</span>: Description of the second feature.</li>
-                <li><span class="bold">Styling</span>: Description of how to style this section.</li>
+                <li><span class="bold">Small Button (<code>.button-small</code>)</span>: Font size is 75% of the base button.</li>
+                <li><span class="bold">Large Button (<code>.button-large</code>)</span>: Font size is 125% of the base button.</li>
+                <li><span class="bold">Extra Large Button (<code>.button-extra-large</code>)</span>: Font size is 150% of the base button.</li>
             </ul>
         </section>
-        <section id="Section3">
-            <h2>Section 3</h2>
+        <section id="ButtonStates">
+            <h2>Button States</h2>
             <p>
-                Description of the third section. Explain the purpose and functionality of this part of the component.
+                The button component includes a disabled state to indicate when a button is not interactive.
             </p>
             <h3>Example</h3>
-            <!-- Add example code or visual representation here -->
+            <a href="#" class="button button-disabled" aria-disabled="true">Disabled Button</a>
             <h3>Usage</h3>
             <ul>
-                <li><span class="bold">Feature 1</span>: Description of the first feature.</li>
-                <li><span class="bold">Feature 2</span>: Description of the second feature.</li>
-                <li><span class="bold">Styling</span>: Description of how to style this section.</li>
+                <li><span class="bold">Disabled Button (<code>.button-disabled</code>)</span>:
+                    <ul>
+                        <li>Background Color: Uses the <code>--disabled</code> CSS variable.</li>
+                        <li>Opacity: 90% opacity to indicate the disabled state.</li>
+                        <li>Hover Effect: No box shadow and cursor changes to <code>not-allowed</code>.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="ButtonVariants">
+            <h2>Button Variants</h2>
+            <p>
+                The button component includes a secondary variant for alternative styling.
+            </p>
+            <h3>Example</h3>
+            <a href="#" class="button button-secondary">Secondary Button</a>
+            <h3>Usage</h3>
+            <ul>
+                <li><span class="bold">Secondary Button (<code>.button-secondary</code>)</span>:
+                    <ul>
+                        <li>Border: Thin solid border using <code>--primary</code>.</li>
+                        <li>Background Color: Inherits from the parent element.</li>
+                        <li>Color: Uses the <code>--primary</code> CSS variable for text color.</li>
+                    </ul>
+                </li>
             </ul>
         </section>
         <section>
             <h2>Code Example</h2>
-            <h3>Example Title</h3>
+            <h3>Base Button</h3>
             <pre class="codeblock">
-<code>&lt;!-- Add code example here --&gt;</code>
+<code>&lt;a href="#" class="button"&gt;Click Me&lt;/a&gt;</code>
+            </pre>
+            <h3>Button Sizes</h3>
+            <pre class="codeblock">
+<code>&lt;a href="#" class="button button-small"&gt;Small Button&lt;/a&gt;
+&lt;a href="#" class="button button-large"&gt;Large Button&lt;/a&gt;
+&lt;a href="#" class="button button-extra-large"&gt;Extra Large Button&lt;/a&gt;</code>
+            </pre>
+            <h3>Disabled Button</h3>
+            <pre class="codeblock">
+<code>&lt;a href="#" class="button button-disabled" aria-disabled="true"&gt;Disabled Button&lt;/a&gt;</code>
+            </pre>
+            <h3>Secondary Button</h3>
+            <pre class="codeblock">
+<code>&lt;a href="#" class="button button-secondary"&gt;Secondary Button&lt;/a&gt;</code>
             </pre>
         </section>
     </main>
