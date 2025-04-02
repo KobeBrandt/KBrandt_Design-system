@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../styles/style.css">
-    <title>Card | KBrandt design system</title>
+    <title>Card Components | KBrandt Design System</title>
 </head>
 <body>
     <header class="background-primary">
@@ -13,107 +13,112 @@
             <div class="nav">
                 <a href=""><img src="../../../images/kb_logo.png" alt="KB"></a>
                 <ul>
-                    <li>
-                        <a href="../../generic">Generic</a>
-                    </li>
-                    <li>
-                        <a href="../../base/">Base</a>
-                    </li>
-                    <li>
-                        <a href="../../utilities/">Utilities</a>
-                    </li>
-                    <li>
-                        <a href="../../components/">Components</a>
-                    </li>
-                    <li>
-                        <a href="../../layout/">Layout</a>
-                    </li>
-                </ul> 
+                    <li><a href="../../generic">Generic</a></li>
+                    <li><a href="../../base/">Base</a></li>
+                    <li><a href="../../utilities/">Utilities</a></li>
+                    <li><a href="../../components/">Components</a></li>
+                    <li><a href="../../layout/">Layout</a></li>
+                </ul>
             </div>
         </nav>
         <nav class="container">
             <ol class="nav-breadcrumb">
-                <li>
-                    <a href="../../components/">Components</a>
-                </li>
+                <li><a href="../../components/">Components</a></li>
+                <li>Card Components</li>
             </ol>
         </nav>
     </header>
-    <main class="container">
-        <h1>Cards</h1>
-        <p>Cards provide a concise, reusable way to display information, enhancing user experience and streamlining development.</p>
+    <main class="container container-detail">
+        <h1>Card Components Documentation</h1>
+        <p>
+            This documentation provides an overview of the Card Components used in the application. Each component is designed to enhance user experience and provide a consistent look and feel.
+        </p>
         <section>
-            <h2>Cards with title + text</h2>
-            <ul class="card">
-                <li>
-                    <h3>Title</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia modi cumque non suscipit facere quo accusantium incidunt placeat architecto? Necessitatibus deserunt eligendi temporibus pariatur odit nemo porro, explicabo suscipit iste?
-                    </p>
-                    <a href="" class="button">Button</a>
-                </li>
-                <li>
-                    <h3>Title</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia modi cumque non suscipit facere quo accusantium incidunt placeat architecto? Necessitatibus deserunt eligendi temporibus pariatur odit nemo porro, explicabo suscipit iste?
-                    </p>
-                </li>
-                <li>
-                    <h3>Title</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia modi cumque non suscipit facere quo accusantium incidunt placeat architecto? Necessitatibus deserunt eligendi temporibus pariatur odit nemo porro, explicabo suscipit iste?
-                    </p>
-                </li>
-                <li>
-                    <h3>Title</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia modi cumque non suscipit facere quo accusantium incidunt placeat architecto? Necessitatibus deserunt eligendi temporibus pariatur odit nemo porro, explicabo suscipit iste?
-                    </p>
-                    <a href="" class="overlay-link">Go to content</a>
-                </li>
-            </ul>
+            <h2>Table of Contents</h2>
+            <ol class="tableOfContents">
+                <li><a href="#Card">Card Component</a></li>
+                <li><a href="#OverlayLink">Overlay Link</a></li>
+            </ol>
         </section>
-        <section>
-            <h2>Cards with img + title + text</h2>
-            <ul class="card">
-                <li>
-                    <h3>Title</h3>
-                    <img src="https://placehold.co/600x400" alt="">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia modi cumque non suscipit facere quo accusantium incidunt placeat architecto? Necessitatibus deserunt eligendi temporibus pariatur odit nemo porro, explicabo suscipit iste?
-                    </p>
-                </li>
-                <li>
-                    <h3>Title</h3>
-                    <img src="https://placehold.co/700x400" alt="">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia modi cumque non suscipit facere quo accusantium incidunt placeat architecto? Necessitatibus deserunt eligendi temporibus pariatur odit nemo porro, explicabo suscipit iste?
-                    </p>
-                </li>
-                <li>
-                    <h3>Title</h3>
-                    <img src="https://placehold.co/600x500" alt="">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia modi cumque non suscipit facere quo accusantium incidunt placeat architecto? Necessitatibus deserunt eligendi temporibus pariatur odit nemo porro, explicabo suscipit iste?
-                    </p>
-                    <a href="" class="button button-large">Button-large</a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Code Example</h2>
+        <section id="Card">
+            <h2>Card Component</h2>
+            <p>
+                The Card Component is designed to display content in a structured and visually appealing manner. It includes styles for various elements within the card.
+            </p>
+            <h3>CSS</h3>
             <pre class="codeblock">
-<code>&lt;ul class="card"&gt;
-    &lt;li&gt;
-        &lt;h3&gt;Card Title&lt;/h3&gt;
-        &lt;p&gt;Card content goes here.&lt;/p&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;</code>
+<code>.card {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+}
+.card li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.2rem;
+    border: 0.1rem solid var(--primary);
+}
+.card li h3,
+.card li p {
+    padding: 1.5rem;
+}
+.card li p {
+    padding-top: 0;
+    margin: 0;
+}
+.card li h3 {
+    padding-bottom: 0;
+    margin: 0;
+}
+.card li img {
+    order: -1;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+    border-radius: 0.1rem 0.1rem 0 0;
+}
+.card li a {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: auto;
+}
+@media (min-width: 46.875em) {
+    .card {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card li {
+        width: 30.7%;
+    }
+}</code>
+            </pre>
+        </section>
+        <section id="OverlayLink">
+            <h2>Overlay Link</h2>
+            <p>
+                The Overlay Link component is used to create a clickable overlay on top of card elements.
+            </p>
+            <h3>CSS</h3>
+            <pre class="codeblock">
+<code>.overlay-link {
+    position: absolute;
+    inset: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}</code>
             </pre>
         </section>
     </main>
-    <footer>
-
+    <footer class="background-primary">
+        <div class="footer">
+            <p>KBrandt design system - made by Kobe Brandt</p>
+        </div>
     </footer>
 </body>
 </html>
