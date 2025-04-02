@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/style.css">
+    <title>Code Component | KBrandt Design System</title>
+    <style>
+        .code {
+            background-color: var(--light-gray);
+            padding: 1rem;
+            color: var(--light-mode-text);
+        }
+    </style>
+</head>
+<body>
+    <header class="background-primary">
+        <nav class="container">
+            <div class="nav">
+                <a href=""><img src="../../../images/kb_logo.png" alt="KB"></a>
+                <ul>
+                    <li><a href="../../generic">Generic</a></li>
+                    <li><a href="../../base/">Base</a></li>
+                    <li><a href="../../utilities/">Utilities</a></li>
+                    <li><a href="../../components/">Components</a></li>
+                    <li><a href="../../layout/">Layout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="container">
+            <ol class="nav-breadcrumb">
+                <li><a href="../../components/">Components</a></li>
+                <li>Code Component</li>
+            </ol>
+        </nav>
+    </header>
+    <main class="container container-detail">
+        <h1>Code Component</h1>
+        <p>
+            This documentation provides an overview of the Code Component used in the application. Each component is designed to enhance user experience and provide a consistent look and feel.
+        </p>
+        <section>
+            <h2>Table of Contents</h2>
+            <ol class="tableOfContents">
+                <li><a href="#Styling">Styling</a></li>
+                <li><a href="#Usage">Usage</a></li>
+                <li><a href="#CodeExample">Code Example</a></li>
+            </ol>
+        </section>
+        <section id="Styling">
+            <h2>Styling</h2>
+            <p>
+                The Code Component is styled to provide a clear and readable display of code snippets. It uses a light gray background and a color that is suitable for light mode text.
+            </p>
+            <h3>CSS</h3>
+            <pre class="codeblock">
+<code>.code {
+    background-color: var(--light-gray);
+    padding: 1rem;
+    color: var(--light-mode-text);
+}</code>
+            </pre>
+        </section>
+        <section id="Usage">
+            <h2>Usage</h2>
+            <p>
+                The Code Component can be used to display code snippets within the application. It ensures that code is easily distinguishable from other text.
+            </p>
+            <h3>Example</h3>
+            <div class="code">
+                <p>This is an example of code displayed using the Code Component.</p>
+            </div>
+        </section>
+        <section id="CodeExample">
+            <h2>Code Example</h2>
+            <h3>HTML Example</h3>
+            <pre class="codeblock">
+<code>&lt;div class="code"&gt;
+    &lt;p&gt;This is an example of code displayed using the Code Component.&lt;/p&gt;
+&lt;/div&gt;</code>
+            </pre>
+        </section>
+    </main>
+    <footer class="background-primary">
+        <div class="footer">
+            <p>KBrandt design system - made by Kobe Brandt</p>
+        </div>
+    </footer>
+</body>
+</html>

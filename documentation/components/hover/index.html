@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../styles/style.css">
-    <title>Hover | KBrandt design system</title>
+    <title>Hover Effects | KBrandt Design System</title>
 </head>
 <body>
     <header class="background-primary">
@@ -24,37 +24,76 @@
         <nav class="container">
             <ol class="nav-breadcrumb">
                 <li><a href="../../components/">Components</a></li>
-                <li>Hover</li>
+                <li>Hover Effects</li>
             </ol>
         </nav>
     </header>
     <main class="container container-detail">
-        <h1>Hover Component</h1>
-        <p>The hover component provides hover effects for elements, enhancing user interaction and visual feedback.</p>
+        <h1>Hover Effects Components</h1>
+        <p>
+            The hover effects components provide smooth transitions and visual feedback on hover, enhancing user interaction and engagement.
+        </p>
         <section>
-            <h2>Usage</h2>
+            <h2>Table of Contents</h2>
+            <ol class="tableOfContents">
+                <li><a href="#HoverEffect">Hover Effect</a></li>
+                <li><a href="#HoverTextEffect">Hover Text Effect</a></li>
+            </ol>
+        </section>
+        <section id="HoverEffect">
+            <h2>Hover Effect</h2>
+            <p>
+                The hover effect component applies a box shadow on hover, providing a subtle visual cue to users. This effect is activated on larger screens to enhance the interactive experience.
+            </p>
+            <h3>Example</h3>
+            <div class="hover background-primary">
+                Hover over this element to see the effect.
+            </div>
+            <h3>Usage</h3>
             <ul>
-                <li>Apply the <code>hover</code> class to elements to add a box-shadow effect on hover.</li>
-                <li>Apply the <code>hover-text</code> class to elements to add a text-shadow effect on hover.</li>
+                <li><span class="bold">Transition</span>: Smooth transition for box shadow on hover.</li>
+                <li><span class="bold">Box Shadow</span>: Applies a subtle box shadow using the <code>--light-mode-text</code> CSS variable.</li>
+                <li><span class="bold">Media Query</span>: Effect is applied on screens with a minimum width of 46.875em.</li>
+                <li><span class="bold">Application</span>: Add the <code>.hover</code> class to elements to enable the hover effect.</li>
+            </ul>
+        </section>
+        <section id="HoverTextEffect">
+            <h2>Hover Text Effect</h2>
+            <p>
+                The hover text effect component applies a text shadow on hover, enhancing the visibility and emphasis of text elements. This effect is activated on larger screens to improve readability and interaction.
+            </p>
+            <h3>Example</h3>
+            <div class="hover-text background-primary">
+                Hover over this text to see the effect.
+            </div>
+            <h3>Usage</h3>
+            <ul>
+                <li><span class="bold">Transition</span>: Smooth transition for text shadow on hover.</li>
+                <li><span class="bold">Text Shadow</span>: Applies a subtle text shadow using the <code>--light-mode-text</code> CSS variable.</li>
+                <li><span class="bold">Media Query</span>: Effect is applied on screens with a minimum width of 46.875em.</li>
+                <li><span class="bold">Application</span>: Add the <code>.hover-text</code> class to text elements to enable the hover effect.</li>
             </ul>
         </section>
         <section>
-            <h2>Example</h2>
+            <h2>Code Example</h2>
+            <h3>Hover Effect</h3>
             <pre class="codeblock">
-<code>&lt;div class="hover"&gt;Hover over me&lt;/div&gt;
-&lt;p class="hover-text"&gt;Hover over this text&lt;/p&gt;</code>
+<code>&lt;div class="hover" style="padding: 20px; background-color: var(--primary);"&gt;
+    Hover over this element to see the effect.
+&lt;/div&gt;</code>
+            </pre>
+            <h3>Hover Text Effect</h3>
+            <pre class="codeblock">
+<code>&lt;div class="hover-text" style="padding: 20px; background-color: var(--primary); color: var(--white);"&gt;
+    Hover over this text to see the effect.
+&lt;/div&gt;</code>
             </pre>
         </section>
-        <section>
-            <h2>Notes</h2>
-            <ul>
-                <li>Hover effects are only applied on devices with a minimum width of 46.875em (750px).</li>
-                <li>The transition duration for hover effects is 0.3s for a smooth animation.</li>
-            </ul>
-        </section>
     </main>
-    <footer>
-        <p>&copy; 2023 KBrandt Design System. All rights reserved.</p>
+    <footer class="background-primary">
+        <div class="footer">
+            <p>KBrandt design system - made by Kobe Brandt</p>
+        </div>
     </footer>
 </body>
 </html>

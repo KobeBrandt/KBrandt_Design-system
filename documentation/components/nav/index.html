@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../styles/style.css">
-    <title>Nav | KBrandt design system</title>
+    <title>Navigation Components | KBrandt Design System</title>
 </head>
 <body>
     <header class="background-primary">
@@ -13,156 +13,161 @@
             <div class="nav">
                 <a href=""><img src="../../../images/kb_logo.png" alt="KB"></a>
                 <ul>
-                    <li>
-                        <a href="../../generic">Generic</a>
-                    </li>
-                    <li>
-                        <a href="../../base/">Base</a>
-                    </li>
-                    <li>
-                        <a href="../../utilities/">Utilities</a>
-                    </li>
-                    <li>
-                        <a href="../../components/">Components</a>
-                    </li>
-                    <li>
-                        <a href="../../layout/">Layout</a>
-                    </li>
-                </ul> 
+                    <li><a href="../../generic">Generic</a></li>
+                    <li><a href="../../base/">Base</a></li>
+                    <li><a href="../../utilities/">Utilities</a></li>
+                    <li><a href="../../components/">Components</a></li>
+                    <li><a href="../../layout/">Layout</a></li>
+                </ul>
             </div>
         </nav>
         <nav class="container">
             <ol class="nav-breadcrumb">
-                <li>
-                    <a href="../../components/">Components</a>
-                </li>
+                <li><a href="../../components/">Components</a></li>
+                <li>Navigation Components</li>
             </ol>
         </nav>
     </header>
     <main class="container container-detail">
-        <h1>Nav Components</h1>
+        <h1>Navigation Components Documentation</h1>
         <p>
-            This documentation provides an overview of the navigation components used in the application. Each component is designed to enhance user experience and provide easy access to different sections of the application.
+            The Navigation Components used in the application. Each component is designed to enhance user experience and provide a consistent look and feel.
         </p>
         <section>
             <h2>Table of Contents</h2>
             <ol class="tableOfContents">
-                <li><a href="#NavWithLogo">Nav with logo</a></li>
-                <li><a href="#NavWithName">Nav with name</a></li>
-                <li><a href="#NavBreadcrumb">Nav breadcrumb</a></li>
+                <li><a href="#Nav">Nav Component</a></li>
+                <li><a href="#NavName">Nav Name Component</a></li>
+                <li><a href="#NavBreadcrumb">Nav Breadcrumb Component</a></li>
             </ol>
         </section>
-        <section id="NavWithLogo">
-            <h2>Nav with logo</h2>
+        <section id="Nav">
+            <h2>Nav Component</h2>
             <p>
-                The "Nav with Logo" component is used to display a navigation bar that includes a logo. 
-                This component is ideal for branding and providing quick access to different sections of the application.
+                The Nav Component is designed to provide a flexible and responsive navigation bar. It includes styles for links, images, and responsive behavior.
             </p>
-            <h3>Example</h3>
-            <nav class="container">
-                <div class="nav">
-                    <a href=""><img src="../../../images/kb_logo.png" alt="KB"></a>
-                    <ul>
-                        <li>
-                            <a href="">item1</a>
-                        </li>
-                        <li>
-                            <a href="">item2</a>
-                        </li>
-                        <li>
-                            <a href="">item3</a>
-                        </li>
-                    </ul> 
-                </div>
-            </nav>
-            <h3>Usage</h3>
-            <ul>
-                <li><span class="bold">Logo</span>: Include a logo image within an anchor tag to make it clickable.</li>
-                <li><span class="bold">Navigation Items</span>: Use an unordered list to display navigation items. Each item should be wrapped in an anchor tag for linking.</li>
-                <li><span class="bold">Styling</span>: Apply the .nav class to style the navigation bar. Use Flexbox for alignment.</li>
-            </ul>
+            <h3>CSS</h3>
+            <pre class="codeblock">
+<code>.nav {
+    display: flex;
+    background-color: var(--primary);
+}
+.nav ul {
+    color: var(--primary-text);
+    list-style: none;
+    width: 100%;
+    font-weight: bold;
+}
+.nav ul li {
+    font-size: 110%;
+    border-bottom: 0.1rem solid var(--primary-text);
+}
+.nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+.nav ul li a:hover {
+    text-shadow: 0rem 0rem 0.2rem var(--light-mode-text);
+}
+.nav ul .current {
+    text-decoration: underline;
+}
+@media (min-width: 46.875em) {
+    .nav img {
+        width: 5rem;
+    }
+    .nav ul {
+        justify-content: right;
+        display: flex;
+        gap: 1rem;
+    }
+    .nav ul li {
+        align-content: center;
+        border-bottom: none;
+    }
+}</code>
+            </pre>
         </section>
-        <section id="NavWithName">
-            <h2>Nav with name</h2>
+        <section id="NavName">
+            <h2>Nav Name Component</h2>
             <p>
-                The "Nav with Name" component is used to display a navigation bar that includes a name or title. This component is useful for personal branding or displaying the name of a section.
+                The Nav Name Component is used to display the name in the navigation bar with specific styles for different screen sizes.
             </p>
-            <h3>Example</h3>
-            <nav class="container">
-                <div class="nav nav-name">
-                    <p>KBrandt</p>
-                    <ul>
-                        <li>
-                            <a href="">item1</a>
-                        </li>
-                        <li>
-                            <a href="">item2</a>
-                        </li>
-                        <li>
-                            <a href="">item3</a>
-                        </li>
-                    </ul> 
-                </div>
-            </nav>
-            <h3>Usage</h3>
-            <ul>
-                <li><span class="bold">Name/Title</span>: Display the name or title using a paragraph tag.</li>
-                <li><span class="bold">Navigation Items</span>: Use an unordered list to display navigation items. Each item should be wrapped in an anchor tag for linking.</li>
-                <li><span class="bold">Styling</span>: Apply the .nav and .nav-name classes to style the navigation bar. Use Flexbox for alignment.</li>
-            </ul>
+            <h3>CSS</h3>
+            <pre class="codeblock">
+<code>.nav-name {
+    flex-direction: column;
+}
+.nav-name p {
+    font-weight: bold;
+    text-align: center;
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+.nav-name ul {
+    padding: 0;
+}
+.nav-name ul li {
+    text-align: center;
+}
+.nav-name p:hover {
+    text-shadow: 0rem 0rem 0.2rem var(--light-mode-text);
+    text-decoration: underline;
+}
+@media (min-width: 46.875em) {
+    .nav-name {
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-name p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: left;
+        transition: text-shadow 0.3s ease-in-out;
+        transition: text-decoration 0.3s ease-in-out;
+    }
+}</code>
+            </pre>
         </section>
         <section id="NavBreadcrumb">
-            <h2>Nav breadcrumb</h2>
-            <p>The "Nav Breadcrumb" component is used to display a breadcrumb navigation. Breadcrumbs help users understand their location within the application's hierarchy.</p>
-            <nav class="container">
-                <ol class="nav-breadcrumb">
-                    <li>
-                        <a href="">item1</a>
-                    </li>
-                    <li>
-                        <a href="">item2</a>
-                    </li>
-                    <li>
-                        <a href="">item3</a>
-                    </li>
-                </ol> 
-            </nav>
-            <h3>Usage</h3>
-            <ul>
-                <li><span class="bold">Breadcrumb Items</span>: Use an ordered list to display breadcrumb items. Each item should be wrapped in an anchor tag for linking.</li>
-                <li><span class="bold">Navigation Items</span>: Apply the .nav-breadcrumb class to style the breadcrumb navigation. Use Flexbox for alignment and add separators between items.</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Code Example</h2>
-            <h3>Nav with img</h3>
+            <h2>Nav Breadcrumb Component</h2>
+            <p>
+                The Nav Breadcrumb Component provides a styled breadcrumb navigation to help users understand their current location within the application.
+            </p>
+            <h3>CSS</h3>
             <pre class="codeblock">
-<code>&lt;nav class="container"&gt;
-    &lt;div class="nav"&gt;
-        &lt;a href="#"&gt;&lt;img src="logo.png" alt="Logo"&gt;&lt;/a&gt;
-        &lt;ul&gt;
-            &lt;li&gt;&lt;a href="#generic"&gt;Generic&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="#base"&gt;Base&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="#utilities"&gt;Utilities&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="#components"&gt;Components&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="#layout"&gt;Layout&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/nav&gt;</code>
-            </pre>
-            <h3>Breadcrumb</h3>
-            <pre class="codeblock">
-<code>&lt;nav class="container"&gt;
-    &lt;ol class="nav-breadcrumb"&gt;
-        &lt;li&gt;&lt;a href="#components"&gt;Components&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;Codeblock&lt;/li&gt;
-    &lt;/ol&gt;
-&lt;/nav&gt;</code>
+<code>.nav-breadcrumb {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+    background-color: var(--primary);
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
+}
+.nav-breadcrumb li {
+    margin-top: 0;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+.nav-breadcrumb li a {
+    color: inherit;
+}
+.nav-breadcrumb li::after {
+    content: ">";
+    margin-inline: 0.5rem;
+    text-decoration: none;
+}</code>
             </pre>
         </section>
     </main>
-    <footer>
-
+    <footer class="background-primary">
+        <div class="footer">
+            <p>KBrandt design system - made by Kobe Brandt</p>
+        </div>
     </footer>
 </body>
 </html>

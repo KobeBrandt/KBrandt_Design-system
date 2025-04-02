@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../styles/style.css">
-    <title>Form | KBrandt Design System</title>
+    <title>Form Components | KBrandt Design System</title>
 </head>
 <body>
     <header class="background-primary">
@@ -24,116 +24,174 @@
         <nav class="container">
             <ol class="nav-breadcrumb">
                 <li><a href="../../components/">Components</a></li>
-                <li>Form</li>
+                <li>Form Components</li>
             </ol>
         </nav>
     </header>
-
-    <!-- Documentation Section -->
-    <section class="documentation">
-        <div class="container">
-            <h1>Form Component Documentation</h1>
-            <p>
-                This page provides an overview of the Form component in the KBrandt Design System. 
-                Forms are essential for collecting user input and are designed to be accessible, customizable, and easy to use.
-            </p>
-            <ul>
-                <li><strong>Purpose:</strong> Collect user input in a structured and accessible way.</li>
-                <li><strong>Features:</strong> Includes text inputs, text areas, dropdowns, checkboxes, and radio buttons.</li>
-                <li><strong>Accessibility:</strong> Built with semantic HTML and ARIA attributes for better usability.</li>
-            </ul>
-        </div>
-    </section>
-
     <main class="container container-detail">
-        <h1>Form</h1>
-        <p>Get user input</p>
+        <h1>Form Components Documentation</h1>
+        <p>
+            This documentation provides an overview of the Form Components used in the application. Each component is designed to enhance user experience and provide a consistent look and feel.
+        </p>
         <section>
-            <form action="" class="form">
-                <div class="form-item">
-                    <label for="text">
-                        <span>text</span>
-                        <span class="error">Error</span>
-                    </label>
-                    <input type="text" name="text" id="text" autocomplete="" required>
-                </div>
-                <div class="form-item">
-                    <label for="textarea">
-                        <span>text area</span>
-                    </label>
-                    <textarea name="textarea" id="textarea"></textarea>
-                </div>
-                <div class="form-item disabled">
-                    <label for="pass">
-                        <span>Password</span>
-                    </label>
-                    <input type="password" name="pass" id="pass" autocomplete="current-password" disabled>
-                </div>
-                <div class="form-item">
-                    <label for="select">
-                        <span>Select</span>
-                        <select name="select" id="select">
-                            <option value="1">This is an option</option>
-                            <option value="2">This is also an option</option>
-                        </select>
-                    </label>
-                </div>
-                <div class="form-item">
-                    <fieldset>
-                        <legend>
-                            <span class="label">checkbox</span>
-                        </legend>
-                        <div class="checkbox">
-                            <input type="checkbox" id="check1" name="check[]" value="1" aria-describedby="error_checkbox">
-                            <label for="check1">Check1</label>
-                        </div>
-                        <div class="checkbox">
-                            <input type="checkbox" id="check2" name="check[]" value="2" aria-describedby="error_checkbox">
-                            <label for="check2">Check2</label>
-                        </div>
-                        <div class="checkbox">
-                            <input type="checkbox" id="check3" name="check[]" value="3" aria-describedby="error_checkbox">
-                            <label for="check3">Check3</label>
-                        </div>
-                    </fieldset>
-                </div>
-                <div class="form-item">
-                    <fieldset>
-                        <legend>
-                            <span class="label">radio</span>
-                            <span class="error" id="error_radio">error</span>
-                        </legend>
-                        <div class="radiobutton">
-                            <input type="radio" id="radio1" name="radio" value="radio1" aria-describedby="error_radio">
-                            <label for="radio1">Radio1</label>
-                        </div>
-                        <div class="radiobutton">
-                            <input type="radio" id="radio2" name="radio" value="radio2" aria-describedby="error_radio">
-                            <label for="radio2">Radio2</label>
-                        </div>
-                        <div class="radiobutton">
-                            <input type="radio" id="radio3" name="radio" value="radio3" aria-describedby="error_radio">
-                            <label for="radio3">Radio3</label>
-                        </div>
-                    </fieldset>
-                </div>
-                <button class="button">Submit</button>
-            </form>
+            <h2>Table of Contents</h2>
+            <ol class="tableOfContents">
+                <li><a href="#Form">Form Component</a></li>
+                <li><a href="#FormItem">Form Item</a></li>
+                <li><a href="#FormCombined">Form Combined</a></li>
+                <li><a href="#Inputs">Inputs</a></li>
+                <li><a href="#Fieldset">Fieldset</a></li>
+                <li><a href="#Button">Button</a></li>
+                <li><a href="#Error">Error</a></li>
+                <li><a href="#Disabled">Disabled</a></li>
+            </ol>
         </section>
-        <section>
-            <h2>Code Example</h2>
+        <section id="Form">
+            <h2>Form Component</h2>
+            <p>
+                The Form Component is designed to provide a structured and responsive layout for forms. It includes styles for various form elements.
+            </p>
+            <h3>CSS</h3>
             <pre class="codeblock">
-<code>&lt;form class="form"&gt;
-    &lt;div class="form-item"&gt;
-        &lt;label for="input"&gt;Label&lt;/label&gt;
-        &lt;input type="text" id="input" /&gt;
-    &lt;/div&gt;
-&lt;/form&gt;</code>
+<code>.form {
+    display: flex;
+    flex-direction: column;
+}</code>
+            </pre>
+        </section>
+        <section id="FormItem">
+            <h2>Form Item</h2>
+            <p>
+                The Form Item is a sub-component used within the form to structure individual form elements.
+            </p>
+            <h3>CSS</h3>
+            <pre class="codeblock">
+<code>.form .form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    margin-bottom: 1.75em;
+}</code>
+            </pre>
+        </section>
+        <section id="FormCombined">
+            <h2>Form Combined</h2>
+            <p>
+                The Form Combined component is used to display multiple form elements side by side.
+            </p>
+            <h3>CSS</h3>
+            <pre class="codeblock">
+<code>.form .form-combined {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+.form .form-combined div {
+    width: 25%;
+}
+.form .form-combined .large {
+    width: 75%;
+}</code>
+            </pre>
+        </section>
+        <section id="Inputs">
+            <h2>Inputs</h2>
+            <p>
+                Styles for input elements within the form, including text inputs and textareas.
+            </p>
+            <h3>CSS</h3>
+            <pre class="codeblock">
+<code>.form input,
+.form textarea {
+    font-size: 1rem;
+    padding: 0.5em;
+    width: 90%;
+    width: calc(100% - 1.5em);
+    border-radius: 0.2rem;
+}</code>
+            </pre>
+        </section>
+        <section id="Fieldset">
+            <h2>Fieldset</h2>
+            <p>
+                The Fieldset component is used to group related form elements together.
+            </p>
+            <h3>CSS</h3>
+            <pre class="codeblock">
+<code>.form fieldset {
+    border: 0;
+    padding: 0;
+}
+.form .radiobutton,
+.form .checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+}
+.form .radiobutton input,
+.form .checkbox input {
+    width: 3%;
+}
+.form .radiobutton label,
+.form .checkbox label {
+    width: auto;
+    font-weight: normal;
+}</code>
+            </pre>
+        </section>
+        <section id="Button">
+            <h2>Button</h2>
+            <p>
+                Styles for buttons within the form.
+            </p>
+            <h3>CSS</h3>
+            <pre class="codeblock">
+<code>.form .button {
+    width: 25%;
+    font-size: 1em;
+}</code>
+            </pre>
+        </section>
+        <section id="Error">
+            <h2>Error</h2>
+            <p>
+                Styles for displaying error messages within the form.
+            </p>
+            <h3>CSS</h3>
+            <pre class="codeblock">
+<code>.form .error {
+    display: block;
+    font-weight: normal;
+    margin-top: 0.25em;
+    color: var(--error);
+    margin: 0;
+    padding: 0;
+}</code>
+            </pre>
+        </section>
+        <section id="Disabled">
+            <h2>Disabled</h2>
+            <p>
+                Styles for disabled form elements.
+            </p>
+            <h3>CSS</h3>
+            <pre class="codeblock">
+<code>.form .disabled {
+    color: var(--disabled);
+    border-color: var(--disabled);
+}
+.form .disabled:hover input {
+    cursor: not-allowed;
+}</code>
             </pre>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2025 KBrandt Design System. All rights reserved.</p>
+    <footer class="background-primary">
+        <div class="footer">
+            <p>KBrandt design system - made by Kobe Brandt</p>
+        </div>
     </footer>
 </body>
 </html>
