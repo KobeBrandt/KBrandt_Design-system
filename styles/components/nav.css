@@ -21,6 +21,9 @@
                 }
             }
         }
+        .curent{
+            text-decoration: underline;
+        }
     }
     @media (min-width: 46.875em) {
         img{
