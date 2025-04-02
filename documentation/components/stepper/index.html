@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/style.css">
+    <title>Stepper Component | KBrandt Design System</title>
+</head>
+<body>
+    <header class="background-primary">
+        <nav class="container">
+            <div class="nav">
+                <a href=""><img src="../../../images/kb_logo.png" alt="KB"></a>
+                <ul>
+                    <li><a href="../../generic">Generic</a></li>
+                    <li><a href="../../base/">Base</a></li>
+                    <li><a href="../../utilities/">Utilities</a></li>
+                    <li><a href="../../components/">Components</a></li>
+                    <li><a href="../../layout/">Layout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="container">
+            <ol class="nav-breadcrumb">
+                <li><a href="../../components/">Components</a></li>
+                <li>Stepper Component</li>
+            </ol>
+        </nav>
+    </header>
+    <main class="container container-detail">
+        <h1>Stepper</h1>
+        <p>
+            The Stepper Component used in the application. Each component is designed to enhance user experience and provide a consistent look and feel.
+        </p>
+        <section>
+            <h2>Table of Contents</h2>
+            <ol class="tableOfContents">
+                <li><a href="#Stepper">Stepper Component</a></li>
+                <li><a href="#CurrentStep">Current Step</a></li>
+            </ol>
+        </section>
+        <section id="Stepper">
+            <h2>Stepper Component</h2>
+            <p>
+                The Stepper Component is designed to visually represent progress through a series of steps. It includes styles for step indicators and connecting lines.
+            </p>
+            <h3>CSS</h3>
+            <pre class="codeblock">
+<code>.stepper {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.stepper li {
+    position: relative;
+    flex: 1;
+}
+.stepper li::before {
+    content: "";
+    aspect-ratio: 1/1;
+    width: 1.5rem;
+    border-radius: 50%;
+    border: 0.2rem solid;
+    background-color: var(--bg);
+    display: block;
+}
+.stepper li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.1rem;
+    border: 0.1rem solid;
+    top: 0.69rem;
+    left: 51%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.stepper li:last-child::after {
+    display: none;
+}
+.stepper li a {
+    color: inherit;
+}</code>
+            </pre>
+        </section>
+        <section id="CurrentStep">
+            <h2>Current Step</h2>
+            <p>
+                The Current Step is highlighted to indicate the user's current position in the stepper process.
+            </p>
+            <h3>CSS</h3>
+            <pre class="codeblock">
+<code>.stepper .current::before {
+    background-color: var(--primary);
+}</code>
+            </pre>
+        </section>
+    </main>
+    <footer class="background-primary">
+        <div class="footer">
+            <p>KBrandt design system - made by Kobe Brandt</p>
+        </div>
+    </footer>
+</body>
+</html>

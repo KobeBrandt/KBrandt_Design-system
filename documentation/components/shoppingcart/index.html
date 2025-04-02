@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/style.css">
+    <title>Shopping Cart | KBrandt Design System</title>
+</head>
+<body>
+    <header class="background-primary">
+        <nav class="container">
+            <div class="nav">
+                <a href=""><img src="../../../images/kb_logo.png" alt="KB"></a>
+                <ul>
+                    <li><a href="../../generic">Generic</a></li>
+                    <li><a href="../../base/">Base</a></li>
+                    <li><a href="../../utilities/">Utilities</a></li>
+                    <li><a href="../../components/">Components</a></li>
+                    <li><a href="../../layout/">Layout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="container">
+            <ol class="nav-breadcrumb">
+                <li><a href="../../components/">Components</a></li>
+                <li>Shopping Cart</li>
+            </ol>
+        </nav>
+    </header>
+    <main class="container container-detail">
+        <h1>Shopping Cart</h1>
+        <p>
+            The Shopping Cart Components used in the application. Each component is designed to enhance user experience and provide a consistent look and feel.
+        </p>
+        <section>
+            <h2>Table of Contents</h2>
+            <ol class="tableOfContents">
+                <li><a href="#ShoppingCart">Shopping Cart Component</a></li>
+                <li><a href="#YourOrder">Your Order Component</a></li>
+            </ol>
+        </section>
+        <section id="ShoppingCart">
+            <h2>Shopping Cart Component</h2>
+            <p>
+                The Shopping Cart Component is designed to display the items in a user's shopping cart with a clean and organized layout.
+            </p>
+            <h3>CSS</h3>
+            <pre class="codeblock">
+<code>.shoppingCart {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+.shoppingCart section {
+    margin-top: 1rem;
+}
+.shoppingCart h2 {
+    margin-top: 0;
+}
+.shoppingCart article {
+    margin-bottom: 1rem;
+}
+.shoppingCart .big {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.shoppingCart .name {
+    display: flex;
+}
+.shoppingCart .name a {
+    margin-inline-start: auto;
+    color: inherit;
+    padding-top: 1.1rem;
+}</code>
+            </pre>
+        </section>
+        <section id="YourOrder">
+            <h2>Your Order Component</h2>
+            <p>
+                The Your Order Component is used to display the summary of the order, including prices and shipping information.
+            </p>
+            <h3>CSS</h3>
+            <pre class="codeblock">
+<code>.yourOrder ul {
+    list-style: none;
+    padding: 0;
+}
+.yourOrder .price {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-inline-start: auto;
+}
+.yourOrder .price p {
+    width: fit-content;
+    margin: 0;
+}
+.yourOrder .shipping {
+    line-height: 0;
+}</code>
+            </pre>
+        </section>
+    </main>
+    <footer class="background-primary">
+        <div class="footer">
+            <p>KBrandt design system - made by Kobe Brandt</p>
+        </div>
+    </footer>
+</body>
+</html>
