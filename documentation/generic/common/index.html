@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/style.css">
+    <title>Common | KBrandt Design System</title>
+</head>
+<body>
+    <header class="background-primary">
+        <nav class="container">
+            <div class="nav">
+                <a href=""><img src="../../../images/kb_logo.png" alt="KB"></a>
+                <ul>
+                    <li><a href="../../generic">Generic</a></li>
+                    <li><a href="../../base/">Base</a></li>
+                    <li><a href="../../utilities/">Utilities</a></li>
+                    <li><a href="../../components/">Components</a></li>
+                    <li><a href="../../layout/">Layout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="container">
+            <ol class="nav-breadcrumb">
+                <li><a href="../../generic/">generic</a></li>
+                <li>common</li>
+            </ol>
+        </nav>
+    </header>
+    <main class="container container-detail">
+        <h1>Common</h1>
+        <p>
+            The common styles used in the design system. These styles ensure a consistent look and feel across different elements and components.
+        </p>
+        <section>
+            <h2>Table of Contents</h2>
+            <ol class="tableOfContents">
+                <li><a href="#BoxSizing">Global Box-Sizing</a></li>
+                <li><a href="#MainElement">Main Element</a></li>
+            </ol>
+        </section>
+        <section id="BoxSizing">
+            <h2>Global Box-Sizing</h2>
+            <p>
+                The global box-sizing rule ensures that all elements, including pseudo-elements, use the border-box model. This makes it easier to manage element dimensions, including padding and borders.
+            </p>
+            <h3>CSS</h3>
+            <pre class="codeblock">
+<code>*, *::before, *::after {
+    box-sizing: border-box;
+}</code>
+            </pre>
+        </section>
+        <section id="MainElement">
+            <h2>Main Element</h2>
+            <p>
+                The main element is styled to have a minimum height of 80% of the viewport height. This ensures that the main content area occupies a significant portion of the screen, enhancing the layout's visual structure.
+            </p>
+            <h3>CSS</h3>
+            <pre class="codeblock">
+<code>main {
+    min-height: 80vh;
+}</code>
+            </pre>
+        </section>
+    </main>
+    <footer class="background-primary">
+        <div class="footer">
+            <p>KBrandt design system - made by Kobe Brandt</p>
+        </div>
+    </footer>
+</body>
+</html>

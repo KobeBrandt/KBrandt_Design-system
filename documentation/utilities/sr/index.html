@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../styles/style.css">
-    <title>Screen Reader Utilities | KBrandt design system</title>
+    <title>Screen Reader Only | KBrandt Design System</title>
 </head>
 <body>
     <header class="background-primary">
@@ -24,21 +24,82 @@
         <nav class="container">
             <ol class="nav-breadcrumb">
                 <li><a href="../../utilities/">Utilities</a></li>
-                <li>Screen Reader</li>
+                <li>Screen Reader Only</li>
             </ol>
         </nav>
     </header>
     <main class="container container-detail">
-        <h1>Screen Reader Utilities</h1>
-        <p>The `sr.css` file provides utility classes for screen reader accessibility.</p>
+        <h1>Screen Reader Only</h1>
+        <p>
+            The screen reader only (sr-only) class is used to hide elements visually while keeping them accessible to screen readers, enhancing accessibility for users with visual impairments.
+        </p>
         <section>
+            <h2>Table of Contents</h2>
+            <ol class="tableOfContents">
+                <li><a href="#Usage">Usage</a></li>
+                <li><a href="#Styling">Styling</a></li>
+                <li><a href="#Example">Example</a></li>
+            </ol>
+        </section>
+        <section id="Usage">
             <h2>Usage</h2>
-            <p>Use the <code>.sr-only</code> class to hide elements visually while keeping them accessible to screen readers.</p>
+            <p>
+                The `.sr-only` class is applied to elements that should be hidden from visual presentation but remain accessible to screen readers. This is useful for providing additional context or labels that are not necessary for sighted users.
+            </p>
+            <h3>Example</h3>
+            <div class="sr-only" tabindex="0">This text is hidden but accessible to screen readers.</div>
+            <h3>Explanation</h3>
+            <ul>
+                <li><span class="bold">clip</span>: Uses the `rect(0 0 0 0)` value to hide the element visually.</li>
+                <li><span class="bold">clip-path</span>: Uses `inset(50%)` to ensure the element is not visible.</li>
+                <li><span class="bold">height & width</span>: Set to 1px to maintain layout without showing the element.</li>
+                <li><span class="bold">overflow</span>: Set to hidden to prevent content from being displayed.</li>
+                <li><span class="bold">position</span>: Set to absolute to remove the element from the document flow.</li>
+                <li><span class="bold">white-space</span>: Set to nowrap to prevent text from wrapping.</li>
+                <li><span class="bold">:not(:focus):not(:active)</span>: Ensures the element becomes visible when focused or active, allowing screen reader interaction.</li>
+            </ul>
+        </section>
+        <section id="Styling">
+            <h2>Styling</h2>
+            <p>
+                The styling for `.sr-only` ensures that the element is hidden visually but can still be accessed and interacted with by screen readers.
+            </p>
+            <h3>CSS Properties</h3>
+            <ul>
+                <li><span class="bold">clip</span>: Hides the element visually.</li>
+                <li><span class="bold">clip-path</span>: Provides an additional layer of visual hiding.</li>
+                <li><span class="bold">height & width</span>: Minimizes the element's dimensions.</li>
+                <li><span class="bold">overflow</span>: Prevents any content from overflowing the hidden area.</li>
+                <li><span class="bold">position</span>: Removes the element from the normal document flow.</li>
+                <li><span class="bold">white-space</span>: Prevents text from wrapping, ensuring it stays within the hidden area.</li>
+            </ul>
+        </section>
+        <section id="Example">
+            <h2>Example</h2>
+            <h3>HTML</h3>
             <pre class="codeblock">
-<code>&lt;span class="sr-only"&gt;This text is only visible to screen readers.&lt;/span&gt;</code>
+<code>&lt;div class="sr-only" tabindex="0"&gt;
+    This text is hidden but accessible to screen readers.
+&lt;/div&gt;</code>
+            </pre>
+            <h3>CSS</h3>
+            <pre class="codeblock">
+<code>.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}</code>
             </pre>
         </section>
     </main>
-    <footer></footer>
+    <footer class="background-primary">
+        <div class="footer">
+            <p>KBrandt design system - made by Kobe Brandt</p>
+        </div>
+    </footer>
 </body>
 </html>
