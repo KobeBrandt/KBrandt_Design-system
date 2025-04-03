@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../styles/style.css">
-    <title>Hero | KBrandt Design System</title>
+    <title>Table of Contents | KBrandt Design System</title>
 </head>
 <body>
     <header class="background-primary">
@@ -24,56 +24,30 @@
         <nav class="container">
             <ol class="nav-breadcrumb">
                 <li><a href="../../components/">Components</a></li>
-                <li>Hero Components</li>
+                <li>Table of Contents Component</li>
             </ol>
         </nav>
     </header>
     <main class="container container-detail">
-        <h1>Hero</h1>
+        <h1>Table of Contents</h1>
         <p>
-            The Hero Components used in the application. Each component is designed to enhance user experience and provide a consistent look and feel.
+            The Table of Contents Component used in the application. This component is designed to provide a structured and navigable list of sections within a document.
         </p>
         <section>
             <h2>Table of Contents</h2>
             <ol class="tableOfContents">
-                <li><a href="#Hero">Hero Component</a></li>
-                <li><a href="#HeroImage">Hero Image Component</a></li>
+                <li><a href="#TableOfContents">Table of Contents Component</a></li>
             </ol>
         </section>
-        <section id="Hero">
-            <h2>Hero Component</h2>
+        <section id="TableOfContents">
+            <h2>Table of Contents Component</h2>
             <p>
-                The Hero Component is designed to create a prominent introductory section with centered text and customizable font sizes.
+                The Table of Contents Component is used to list and link to various sections within a document, enhancing navigation and user experience.
             </p>
             <h3>CSS</h3>
             <pre class="codeblock">
-<code>.hero {
-    padding: 10rem;
-    text-align: center;
-    color: var(--white);
-}
-.hero .big {
-    font-weight: bold;
-    font-size: 4rem;
-}
-.hero .extra {
-    font-size: 2rem;
-}</code>
-            </pre>
-        </section>
-        <section id="HeroImage">
-            <h2>Hero Image Component</h2>
-            <p>
-                The Hero Image Component is used to display a background image that spans the full width of the hero section, providing a visually engaging backdrop.
-            </p>
-            <h3>CSS</h3>
-            <pre class="codeblock">
-<code>.hero-img {
-    padding: 0;
-    background-image: url(https://placehold.co/300x100);
-    background-size: 100%;
-    height: 30rem;
-    align-content: center;
+<code>.tableOfContents li a {
+    color: inherit;
 }</code>
             </pre>
         </section>

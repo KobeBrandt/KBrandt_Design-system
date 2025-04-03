@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../styles/style.css">
-    <title>Banner | KBrandt design system</title>
+    <title>Banner Component | KBrandt Design System</title>
 </head>
 <body>
     <header class="background-primary">
@@ -13,99 +13,51 @@
             <div class="nav">
                 <a href=""><img src="../../../images/kb_logo.png" alt="KB"></a>
                 <ul>
-                    <li>
-                        <a href="../../generic">Generic</a>
-                    </li>
-                    <li>
-                        <a href="../../base/">Base</a>
-                    </li>
-                    <li>
-                        <a href="../../utilities/">Utilities</a>
-                    </li>
-                    <li>
-                        <a href="../../components/">Components</a>
-                    </li>
-                    <li>
-                        <a href="../../layout/">Layout</a>
-                    </li>
-                </ul> 
+                    <li><a href="../../generic">Generic</a></li>
+                    <li><a href="../../base/">Base</a></li>
+                    <li><a href="../../utilities/">Utilities</a></li>
+                    <li><a href="../../components/">Components</a></li>
+                    <li><a href="../../layout/">Layout</a></li>
+                </ul>
             </div>
         </nav>
-        <img src="https://placehold.co/600x400" alt="" class="banner">
         <nav class="container">
             <ol class="nav-breadcrumb">
-                <li>
-                    <a href="../../components/">Components</a>
-                </li>
+                <li><a href="../../components/">Components</a></li>
+                <li>Banner Component</li>
             </ol>
         </nav>
     </header>
-    <main class="container">
+    <main class="container container-detail">
         <h1>Banner</h1>
-        <p>Navigation can be used to navigate between pages</p>
+        <p>
+            The Banner Component used in the application. The banner is designed to display images in a responsive and visually appealing manner.
+        </p>
         <section>
-            <h2>Nav with logo</h2>
-            <nav class="container">
-                <div class="nav">
-                    <a href=""><img src="../../../images/kb_logo.png" alt="KB"></a>
-                    <ul>
-                        <li>
-                            <a href="">item1</a>
-                        </li>
-                        <li>
-                            <a href="">item2</a>
-                        </li>
-                        <li>
-                            <a href="">item3</a>
-                        </li>
-                    </ul> 
-                </div>
-            </nav>
+            <h2>Table of Contents</h2>
+            <ol class="tableOfContents">
+                <li><a href="#Banner">Banner Component</a></li>
+            </ol>
         </section>
-        <section>
-            <h2>Nav with name</h2>
-            <nav class="container">
-                <div class="nav nav-name">
-                    <p>KBrandt</p>
-                    <ul>
-                        <li>
-                            <a href="">item1</a>
-                        </li>
-                        <li>
-                            <a href="">item2</a>
-                        </li>
-                        <li>
-                            <a href="">item3</a>
-                        </li>
-                    </ul> 
-                </div>
-            </nav>
-        </section>
-        <section>
-            <h2>Nav breadcrumb</h2>
-            <nav class="container">
-                <ol class="nav-breadcrumb">
-                    <li>
-                        <a href="">item1</a>
-                    </li>
-                    <li>
-                        <a href="">item2</a>
-                    </li>
-                    <li>
-                        <a href="">item3</a>
-                    </li>
-                </ol> 
-            </nav>
-        </section>
-        <section>
-            <h2>Code Example</h2>
+        <section id="Banner">
+            <h2>Banner Component</h2>
+            <p>
+                The Banner Component is used to display images that cover the full width of their container while maintaining a fixed height. This ensures a consistent look across different devices.
+            </p>
+            <h3>CSS</h3>
             <pre class="codeblock">
-<code>&lt;img src="banner.jpg" alt="Banner" class="banner"&gt;</code>
+<code>.banner {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}</code>
             </pre>
         </section>
     </main>
-    <footer>
-
+    <footer class="background-primary">
+        <div class="footer">
+            <p>KBrandt design system - made by Kobe Brandt</p>
+        </div>
     </footer>
 </body>
 </html>
