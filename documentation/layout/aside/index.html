@@ -5,17 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../styles/style.css">
-    <title>container | KBrandt Design System</title>
-    <style>
-        .container {
-            max-width: 80rem;
-            margin-inline: auto;
-            padding-inline: 1rem;
-        }
-        .container-detail {
-            max-width: 40rem;
-        }
-    </style>
+    <title>Aside | KBrandt Design System</title>
 </head>
 <body>
     <header class="background-primary">
@@ -34,45 +24,69 @@
         <nav class="container">
             <ol class="nav-breadcrumb">
                 <li><a href="../../layout/">Layout</a></li>
-                <li>Container</li>
+                <li>Aside</li>
             </ol>
         </nav>
     </header>
     <main class="container container-detail">
-        <h1>Container</h1>
+        <h1>Aside</h1>
         <p>
-            The Container used in the application. These components are designed to manage layout and spacing, ensuring a consistent look and feel across different pages.
+            The Aside layout used in the application. These components are designed to manage layout and spacing, ensuring a consistent look and feel across different pages.
         </p>
         <section>
             <h2>Table of Contents</h2>
             <ol class="tableOfContents">
-                <li><a href="#Container">Container</a></li>
-                <li><a href="#ContainerDetail">Container Detail</a></li>
+                <li><a href="#AsideRight">Aside Right Component</a></li>
+                <li><a href="#AsideLeft">Aside Left Component</a></li>
             </ol>
         </section>
-        <section id="Container">
-            <h2>Container Component</h2>
+        <section id="AsideRight">
+            <h2>Aside Right Component</h2>
             <p>
-                The Container Component is used to center content and provide horizontal padding, ensuring that the content is well-spaced and aligned within the viewport.
+                The Aside Right Component is used to create a layout where the main content spans two columns, and the aside content is positioned in the third column.
             </p>
             <h3>CSS</h3>
             <pre class="codeblock">
-<code>.container {
-    max-width: 80rem;
-    margin-inline: auto;
-    padding-inline: 1rem;
+<code>.aside-right {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+}
+.aside-right main {
+    grid-column: 1 / 3;
+}
+.aside-right aside {
+    grid-column: 3;
+}
+@media (min-width: 46.875em) {
+    .aside-right {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }</code>
             </pre>
         </section>
-        <section id="ContainerDetail">
-            <h2>Container Detail Component</h2>
+        <section id="AsideLeft">
+            <h2>Aside Left Component</h2>
             <p>
-                The Container Detail Component is used for narrower content areas, such as detailed views or forms, to focus user attention on specific content.
+                The Aside Left Component is used to create a layout where the aside content is positioned in the first column, and the main content spans the second and third columns.
             </p>
             <h3>CSS</h3>
             <pre class="codeblock">
-<code>.container-detail {
-    max-width: 40rem;
+<code>.aside-left {
+    grid-column-gap: 1rem;
+}
+.aside-left main {
+    grid-column: 2 / 4;
+}
+.aside-left aside {
+    order: -1;
+    grid-column: 1;
+}
+@media (min-width: 46.875em) {
+    .aside-left {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }</code>
             </pre>
         </section>

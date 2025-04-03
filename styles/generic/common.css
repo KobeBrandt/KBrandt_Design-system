@@ -1,8 +1,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
-/* h1{
-    &::after{
-        content: ".";
-    }
-} */
+main {
+    min-height: 80vh;
+}
