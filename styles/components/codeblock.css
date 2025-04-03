@@ -4,5 +4,5 @@
     color: var(--light-mode-text);
     font-family: monospace;
     border-radius: 0.2rem;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
