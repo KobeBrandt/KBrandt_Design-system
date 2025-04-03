@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/style.css">
+    <title>Colors | KBrandt Design System</title>
+</head>
+<body>
+    <header class="background-primary">
+        <nav class="container">
+            <div class="nav">
+                <a href=""><img src="../../../images/kb_logo.png" alt="KB"></a>
+                <ul>
+                    <li><a href="../../generic">Generic</a></li>
+                    <li><a href="../../base/">Base</a></li>
+                    <li><a href="../../utilities/">Utilities</a></li>
+                    <li><a href="../../components/">Components</a></li>
+                    <li><a href="../../layout/">Layout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="container">
+            <ol class="nav-breadcrumb">
+                <li><a href="../../base/">Base</a></li>
+                <li>Colors</li>
+            </ol>
+        </nav>
+    </header>
+    <main class="container container-detail">
+        <h1>Color Variables</h1>
+        <p>
+            The color variables define the visual language of the application, ensuring consistency and coherence across different components and themes.
+        </p>
+        <section>
+            <h2>Table of Contents</h2>
+            <ol class="tableOfContents">
+                <li><a href="#PrimaryColors">Primary Colors</a></li>
+                <li><a href="#LightMode">Light Mode</a></li>
+                <li><a href="#DarkMode">Dark Mode</a></li>
+                <li><a href="#Combination">Combination</a></li>
+                <li><a href="#AdditionalColors">Additional Colors</a></li>
+            </ol>
+        </section>
+        <section id="PrimaryColors">
+            <h2>Primary Colors</h2>
+            <p>
+                Primary colors are used for the main branding elements and interactive components.
+            </p>
+            <h3>Examples</h3>
+            <div style="display: flex; gap: 10px;">
+                <div style="background-color: var(--primary); width: 50px; height: 50px;"></div>
+                <div style="background-color: var(--primary-text); width: 50px; height: 50px;"></div>
+                <div style="background-color: var(--error); width: 50px; height: 50px;"></div>
+                <div style="background-color: var(--alert); width: 50px; height: 50px;"></div>
+                <div style="background-color: var(--disabled); width: 50px; height: 50px;"></div>
+            </div>
+            <h3>Usage</h3>
+            <ul>
+                <li><span class="bold">--primary</span>: Main brand color used for primary actions and highlights.</li>
+                <li><span class="bold">--primary-text</span>: Text color used on primary backgrounds.</li>
+                <li><span class="bold">--error</span>: Color used to indicate errors or issues.</li>
+                <li><span class="bold">--alert</span>: Color used for alerts and notifications.</li>
+                <li><span class="bold">--disabled</span>: Color used for disabled elements.</li>
+            </ul>
+        </section>
+        <section id="LightMode">
+            <h2>Light Mode</h2>
+            <p>
+                Light mode colors are used to create a bright and clean interface.
+            </p>
+            <h3>Examples</h3>
+            <div style="display: flex; gap: 10px;">
+                <div style="background-color: var(--light-mode-text); width: 50px; height: 50px;"></div>
+                <div style="background-color: var(--light-mode-bg); width: 50px; height: 50px;"></div>
+            </div>
+            <h3>Usage</h3>
+            <ul>
+                <li><span class="bold">--light-mode-text</span>: Text color used in light mode.</li>
+                <li><span class="bold">--light-mode-bg</span>: Background color used in light mode.</li>
+            </ul>
+        </section>
+        <section id="DarkMode">
+            <h2>Dark Mode</h2>
+            <p>
+                Dark mode colors are used to create a low-light interface, reducing eye strain.
+            </p>
+            <h3>Examples</h3>
+            <div style="display: flex; gap: 10px;">
+                <div style="background-color: var(--dark-mode-text); width: 50px; height: 50px;"></div>
+                <div style="background-color: var(--dark-mode-bg); width: 50px; height: 50px;"></div>
+            </div>
+            <h3>Usage</h3>
+            <ul>
+                <li><span class="bold">--dark-mode-text</span>: Text color used in dark mode.</li>
+                <li><span class="bold">--dark-mode-bg</span>: Background color used in dark mode.</li>
+            </ul>
+        </section>
+        <section id="Combination">
+            <h2>Combination</h2>
+            <p>
+                Combination variables are used to switch between light and dark modes seamlessly.
+            </p>
+            <h3>Examples</h3>
+            <div style="display: flex; gap: 10px;">
+                <div style="background-color: var(--text); width: 50px; height: 50px;"></div>
+                <div style="background-color: var(--bg); width: 50px; height: 50px;"></div>
+            </div>
+            <h3>Usage</h3>
+            <ul>
+                <li><span class="bold">color-scheme</span>: Defines the color scheme supporting both light and dark modes.</li>
+                <li><span class="bold">--text</span>: Text color that adapts to the current mode.</li>
+                <li><span class="bold">--bg</span>: Background color that adapts to the current mode.</li>
+            </ul>
+        </section>
+        <section id="AdditionalColors">
+            <h2>Additional Colors</h2>
+            <p>
+                Additional colors are used for various UI elements to maintain visual hierarchy and contrast.
+            </p>
+            <h3>Examples</h3>
+            <div style="display: flex; gap: 10px;">
+                <div style="background-color: var(--white); width: 50px; height: 50px;"></div>
+                <div style="background-color: var(--light-gray); width: 50px; height: 50px;"></div>
+            </div>
+            <h3>Usage</h3>
+            <ul>
+                <li><span class="bold">--white</span>: Pure white color used for backgrounds and text.</li>
+                <li><span class="bold">--light-gray</span>: Light gray color used for subtle backgrounds and borders.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Code Example</h2>
+            <h3>Primary Colors</h3>
+            <pre class="codeblock">
+<code>:root {
+    --primary: #5d5bda;
+    --primary-text: #ffffff;
+    --error: #b50000;
+    --alert: #c1da0b;
+    --disabled: #494949;
+}</code>
+            </pre>
+            <h3>Light Mode</h3>
+            <pre class="codeblock">
+<code>:root {
+    --light-mode-text: #000000;
+    --light-mode-bg: #ffffff;
+}</code>
+            </pre>
+            <h3>Dark Mode</h3>
+            <pre class="codeblock">
+<code>:root {
+    --dark-mode-text: #ffffff;
+    --dark-mode-bg: #404040;
+}</code>
+            </pre>
+            <h3>Combination</h3>
+            <pre class="codeblock">
+<code>:root {
+    color-scheme: light dark;
+    --text: light-dark(var(--light-mode-text), var(--dark-mode-text));
+    --bg: light-dark(var(--light-mode-bg), var(--dark-mode-bg));
+    color: var(--text);
+    background-color: var(--bg);
+}</code>
+            </pre>
+            <h3>Additional Colors</h3>
+            <pre class="codeblock">
+<code>:root {
+    --white: #ffffff;
+    --light-gray: #d6d6d6;
+}</code>
+            </pre>
+        </section>
+    </main>
+    <footer class="background-primary">
+        <div class="footer">
+            <p>KBrandt design system - made by Kobe Brandt</p>
+        </div>
+    </footer>
+</body>
+</html>
