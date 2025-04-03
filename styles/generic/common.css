@@ -1,6 +1,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
-main {
-    min-height: 80vh;
+body {
+    min-height: 100vh;
 }
