@@ -4,7 +4,7 @@
 body {
     min-height: 100vh;
 }
-:focus {
+:focus-visible {
     outline: 3px solid var(--text);
     outline-offset: 0.5rem;
     border-radius: 0.2rem;
