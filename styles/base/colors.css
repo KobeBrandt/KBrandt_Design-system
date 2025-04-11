@@ -19,8 +19,15 @@
     color-scheme: light dark;
     --text: light-dark(var(--light-mode-text), var(--dark-mode-text));
     --bg: light-dark(var(--light-mode-bg), var(--dark-mode-bg));
+
+    /* reverse */
+    --text-reverse: light-dark( var(--dark-mode-text),var(--light-mode-text));
+    --bg-reverse: light-dark(var(--dark-mode-bg), var(--light-mode-bg));
+
+    /* implementation */
     color: var(--text);
     background-color: var(--bg);
+
 
     /* just colors */
     --white: #ffffff;

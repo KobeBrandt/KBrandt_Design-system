@@ -2,8 +2,8 @@
     /* container */
     --containerPadding: 1rem;
     --containerWidth: 80rem;
-    --container-detailWith: 40rem
+    --container-detailWith: 40rem;
 
-    /* border */
-    --border: 0.5rem
+    /* rounded */
+    --round: 0.5rem;
 }

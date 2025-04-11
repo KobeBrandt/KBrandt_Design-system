@@ -9,3 +9,6 @@ body {
     outline-offset: 0.5rem;
     border-radius: 0.2rem;
 }
+a{
+    color: inherit;
+}

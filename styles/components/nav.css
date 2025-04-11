@@ -5,7 +5,6 @@
     a{
         display:block;
         text-decoration: none;
-        color: inherit;
         font-weight: bold;
         text-align: center;
         font-size: 110%;
@@ -13,19 +12,19 @@
     p{
         font-size: 2rem;
         margin-bottom: 0;
-        border-bottom: 0.2rem solid var(--text);
+        border-bottom: 0.2rem solid var(--primary);
     }
     ul{
         list-style: none;
         padding-inline: 0;
         li{
-            border-bottom: 0.1rem solid var(--text);
+            border-bottom: 0.1rem solid var(--primary);
             padding: 0.5rem;
             a{
                 @media (min-width: 46.875em) {
                     transition: text-shadow 0.3s ease-in-out;
                     &:hover{
-                        text-shadow: 0rem 0rem 0.2rem var(--light-mode-text);
+                        text-shadow: 0rem 0rem 0.2rem var(--text);
                     }
                 }
             }
@@ -50,31 +49,45 @@
     img{
         font-size: 2rem;
         margin-bottom: 0;
+        border-radius: var(--round);
+    }
+}
+
+.navigation-solid{
+    background-color: var(--primary);
+    color: var(--primary-text);
+    p{
+        border-color: var(--primary-text);
+    }
+    ul{
+        list-style: none;
+        padding-inline: 0;
+        li{
+            border-color: var(--primary-text);
+        }
     }
 }
 
 .navigation-breadcrumb{
-    list-style: none;
-    padding: 0;
-    margin-top: 0;
-    display: flex;
-    background-color: var(--primary);
-    margin-bottom: 0;
-    padding-bottom: 0.5rem;
-    li{
-        margin-top: 0;
-        color: var(--white);
+    ol{
+        margin: 0;
+        max-width: var(--containerWidth);
+        margin-inline: auto;
+        padding-inline: var(--containerPadding);
+        list-style: none;
         display: flex;
-        align-items: center;
-        a{
-            color: inherit;
+        flex-wrap: wrap;
+        li{
+            &::after{
+                content: ">";
+                margin-inline: 0.5rem;
+                text-decoration: none;
+            }
+            &:last-child{
+                &::after{
+                    content: "";
+                }
+            }
         }
-
-        &::after{
-            content: ">";
-            margin-inline: 0.5rem;
-            text-decoration: none;
-        }
-
     }
 }
