@@ -1,18 +1,27 @@
-.nav{
+.navigation{
     display: flex;
-    background-color: var(--primary);
-    ul{
-        color: var(--primary-text);
-        list-style: none;
-        width: 100%;
+    flex-direction: column;
+    width: 100%;
+    a{
+        display:block;
+        text-decoration: none;
+        color: inherit;
         font-weight: bold;
+        text-align: center;
+        font-size: 110%;
+    }
+    p{
+        font-size: 2rem;
+        margin-bottom: 0;
+        border-bottom: 0.2rem solid var(--text);
+    }
+    ul{
+        list-style: none;
+        padding-inline: 0;
         li{
-            font-size: 110%;
-            border-bottom: 0.1rem solid var(--primary-text);
+            border-bottom: 0.1rem solid var(--text);
+            padding: 0.5rem;
             a{
-                display:block;
-                text-decoration: none;
-                color: inherit;
                 @media (min-width: 46.875em) {
                     transition: text-shadow 0.3s ease-in-out;
                     &:hover{
@@ -26,9 +35,6 @@
         }
     }
     @media (min-width: 46.875em) {
-        img{
-            width: 5rem;
-        }
         ul{
             justify-content: right;
             display: flex;
@@ -40,38 +46,14 @@
         }
     }
 }
-.nav-name{
-    flex-direction: column;
-    p{
-        font-weight: bold;
-        text-align: center;
-        color: var(--white);
+.navigation-img{
+    img{
         font-size: 2rem;
         margin-bottom: 0;
     }
-    ul{
-        padding: 0;
-        li{
-            text-align: center;
-        }
-    }
-    @media (min-width: 46.875em) {
-        display: flex;
-        flex-direction: row;
-        p{
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            text-align: left;
-            transition: text-shadow 0.3s ease-in-out;
-            transition: text-decoration 0.3s ease-in-out;
-            &:hover{
-                text-shadow: 0rem 0rem 0.2rem var(--light-mode-text);
-                text-decoration: underline;
-            }
-        }
-    }
 }
-.nav-breadcrumb{
+
+.navigation-breadcrumb{
     list-style: none;
     padding: 0;
     margin-top: 0;
