@@ -17,6 +17,7 @@
     img{
         font-size: 2rem;
         border-radius: var(--round);
+        width: 75%;
     }
     ul{
         list-style: none;
@@ -24,9 +25,6 @@
         li{
             border-bottom: 0.1rem solid var(--primary);
             padding: 0.5rem;
-            a{
-                /* hover */
-            }
         }
         .curent{
             text-decoration: underline;
@@ -41,13 +39,18 @@
         align-items: baseline;
         p{
             margin-right: auto;
+            margin-top: 1rem;
             border: none;
             a{
                 text-align: initial;
             }
+            transition: transform 250ms ;
+            &:hover {
+                transform: translateY(0.3rem);
+            }
         }
         img{
-            width: 3rem;
+            width: 10rem;
         }
         ul{
             justify-content: right;
@@ -57,7 +60,10 @@
             li{
                 border-bottom: none;
                 a{
-                    /* hover */
+                    transition: transform 250ms;
+                    &:hover {
+                        transform: translateY(0.3rem);
+                    }
                 }
             }
         }
@@ -97,7 +103,7 @@
             }
             &:last-child{
                 &::after{
-                    content: "";
+                    content: none;
                 }
             }
         }

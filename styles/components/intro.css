@@ -1,0 +1,21 @@
+.intro{
+    margin-top: 3rem;
+    @media (min-width: 46.875em) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
+    img{
+        width: 75%;
+        align-self: center;
+    }
+    .first{
+        order: -1;
+    }
+    h1{
+        font-size: 275%;
+    }
+    p{
+        font-size: 150%;
+    }
+}

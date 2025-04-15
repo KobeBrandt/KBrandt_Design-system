@@ -12,3 +12,18 @@ body {
 a{
     color: inherit;
 }
+h1{
+    font-size: 250%;
+    margin-bottom: 0;
+}
+h2{
+    font-size: 200%;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+h3{
+    font-size: 150%;
+}
+p{
+    margin-bottom: 1rem;
+}
